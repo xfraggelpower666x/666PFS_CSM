@@ -17,6 +17,8 @@ Repository-native control plane for 666PFS and its internal 666CSM service.
 2. Read `governance/REHYDRATION_CONTRACT.md`.
 3. Read `csm/COORDINATION_CONTRACT.md`.
 4. Read `registry/README.md` and `registry/REHYDRATION_MATRIX.md`.
-5. Resolve only the explicitly requested PFS target.
+5. Read `dashboard/DASHBOARD_CONTRACT.md`, `dashboard/CHILD_MENU_CONTRACT.md`, `dashboard/CHILD_CARD_SCHEMA.md` and `dashboard/RENDERING_ORDER.md`.
+6. Render the Whole-System dashboard and visual child menu from canonical repository state.
+7. Resolve only the explicitly requested PFS target.
 
 Historical material must never be promoted automatically.
