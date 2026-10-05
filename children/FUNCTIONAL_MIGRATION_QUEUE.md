@@ -1,32 +1,32 @@
 # Functional Child Migration Queue
 
-Goal: each eligible child becomes a repository-native, rehydratable child system rather than a registry-only entry.
+PRIORITY=ALL_EXISTING_CHILDREN_TO_REPO_BEFORE_NEW_CHILD_CREATION
+DATE=2026-10-05
 
-## Required child package contract
-Each migrated child must provide, as evidence permits:
-- SYSTEM_IDENTITY.md
-- CURRENT_STATE.md
-- REHYDRATION.md
-- TRIGGERS.md
-- runtime/ or an explicit external-runtime binding
-- config/ where applicable
-- docs/
-- recovery / provenance metadata
-- dashboard card metadata
+## Active migration progress
+REGISTERED_ACTIVE=23
+READY_OR_VERIFIED_BOUND=19
+NEWLY_MIGRATED_RUNTIME_PAYLOADS_THIS_UPDATE=16
+PREEXISTING_READY_OR_BOUND=3
 
-## Migration rules
-1. Read the latest verified child state from canonical evidence.
-2. Preserve ENTRY_ID and SYSTEM_ID.
-3. Do not invent missing runtime files.
-4. Copy or bind only verified functional material.
-5. Re-audit after migration.
-6. Mark runtime as READY only after direct readback / source verification.
-7. Preserve backup-only children as backup-only unless their runtime becomes independently verified.
-8. Quarantine identity conflicts instead of guessing.
+## Remaining active work
+- PHG-3001 — source v2.13.0 VERIFIED; repeated h2 binary-transfer failure — WRITE_BLOCKED_TRANSFER
+- CTIO-7001 — SOURCE_DISCOVERY_OPEN
+- DISCORD-14001 — source package VERIFIED (~98 MB) — LARGE_BINARY_TRANSFER_PENDING
+- CURES-16001 — v0.1.0 runtime plus v0.1.1 semantic/purpose authority — RECONCILIATION_REQUIRED
 
-## Current migration state
-- Registry normalization: VERIFIED
-- Repo-native child inventory: CREATED
-- Functional child payload migration: OPEN
-- Backup-only class separation: VERIFIED
-- Identity-conflict quarantine: ACTIVE
+## Preservation / backup work
+- SOUNDWAVE-34001 — v1.18.0 evidence found — payload migration pending
+- LIGHT-35001 — repo metadata verified; runtime not independently verified
+- WEBLYVRA-36001 — 14.1 MB backup package found — payload migration pending
+- LYVRAPLUGIN-37001 — existing child identity recovered; metadata migrated; binaries/refresh pending
+
+## Historical / reconciliation work
+- LYVRA-DOLMETSCHER-13001, UDF-19001, ASMIF-20001, ARCHEON-20001, GIFT-21001, CGF-31001 remain re-audit/quarantine as applicable.
+- URLMD-15001 and ISQF-24001 require registry reconciliation.
+
+## Rules
+SOURCE_FOUND != PAYLOAD_MIGRATED
+PAYLOAD_MIGRATED != READY
+READY requires direct repository readback.
+NO_GENUINELY_NEW_CHILD_CREATION_UNTIL_EXISTING_MIGRATION_COMPLETE=TRUE

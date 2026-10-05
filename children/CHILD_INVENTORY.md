@@ -1,8 +1,8 @@
 # 666PFS Child Inventory
 
-Source: verified PFS child registry, normalized on 2026-10-05.
+Source: verified PFS registry plus direct Drive recovery reconciliation on 2026-10-05.
 
-## Active / functional-migration candidates
+## Active / functional children
 - PHG-3001 — 666 PHOTOREALISMUS GENERATOR — 666-PRG-001
 - UMIP-4001 — 666 UNIVERSAL MULTIMEDIA INTELLIGENCE PLATFORM — 666UMIP-CHILD-001
 - STREAM-5001 — 666STREAM DEPLOYMENT — 666PFS-666STREAM-DEPLOYMENT-001
@@ -28,16 +28,22 @@ Source: verified PFS child registry, normalized on 2026-10-05.
 - TRACKHUB-32001 — 666TRACKDESIGNHUB — 666TRACKHUB-001
 
 ## Preservation / backup class
-- SOUNDWAVE-34001 — preservation/versioning/restore role
-- LIGHT-35001 — repo-first backup metadata; WebRadio GitHub source authority; Drive legacy-history only; runtime not verified
-- WEBLYVRA-36001 — backup-only, not loadable
+- SOUNDWAVE-34001 — preservation/versioning/restore
+- LIGHT-35001 — repo-first backup metadata
+- WEBLYVRA-36001 — backup-only
+- LYVRAPLUGIN-37001 — LYVRA Plugin Backup — existing PFS backup child recovered from Drive receipt
 
 ## Historical / special handling
 - LYVRA-DOLMETSCHER-13001 — historical predecessor / migration conflict history
-- UDF-19001 — identity fields require re-audit before repo-native publication
-- ASMIF-20001 — identity fields require re-audit before repo-native publication
-- ARCHEON-20001 — incomplete identity block; HOLD
-- GIFT-21001 — identity fields require re-audit before repo-native publication
-- CGF-31001 — incomplete/conflicting identity block; HOLD
+- UDF-19001 — identity re-audit required
+- ASMIF-20001 — identity re-audit required
+- ARCHEON-20001 — HOLD
+- GIFT-21001 — identity re-audit required
+- CGF-31001 — CONFLICT_QUARANTINE
 
-Child autoload remains forbidden. Presence in this inventory does not mean runtime migration is complete.
+## Drive-recovered reconciliation candidates
+- URLMD-15001 — RECONCILIATION_REQUIRED
+- ISQF-24001 — RECONCILIATION_REQUIRED
+- PENDING_666_LIGHT_ORCHESTRA_NEW_CHILD — reconcile against LIGHT-35001; no auto-promotion
+
+Child autoload remains forbidden.

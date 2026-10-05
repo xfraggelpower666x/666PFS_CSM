@@ -2,43 +2,19 @@
 
 DATE=2026-10-05
 SYSTEM_ID=666PFS-CORE-001
-NAMESPACE=666PFS
 MODE=REPO_FIRST_CONTINUITY
-
-## Rehydrate in this order
-1. README.md
-2. governance/SYSTEM_IDENTITY.md
-3. governance/REHYDRATION_CONTRACT.md
-4. csm/COORDINATION_CONTRACT.md
-5. registry/README.md
-6. registry/REHYDRATION_MATRIX.md
-7. registry/CURRENT_STATE.md
-8. handoff/LYVRA_PLUGIN_BACKUP_HANDOFF_CURRENT.md when PENDING_EXTERNAL_HANDOFF=LYVRA_PLUGIN_BACKUP_REFRESH
-9. dashboard/DASHBOARD_CONTRACT.md
-10. dashboard/CURRENT_DASHBOARD.md
-11. children/CHILD_INVENTORY.md
-12. children/FUNCTIONAL_MIGRATION_QUEUE.md
-13. registry/CURRENT_POINTER.md
-
-## Resume state
 SELECTED_CHILD=NONE
+
+RESUME_PRIORITY=ALL_EXISTING_CHILDREN_TO_REPO
+ACTIVE_READY_OR_BOUND=19_OF_23
+NEWLY_MIGRATED_THIS_UPDATE=16
 FUNCTIONAL_CHILD_PAYLOAD_MIGRATION=OPEN
-IDENTITY_CONFLICT_QUARANTINE=ACTIVE
-REPO_ROLE=PRIMARY_RUNTIME_CONTROL_SURFACE
+
+NEXT_ACTIVE_BLOCKERS=PHG-3001,CTIO-7001,DISCORD-14001,CURES-16001
+NEXT_BACKUP_WORK=SOUNDWAVE-34001,LIGHT-35001,WEBLYVRA-36001,LYVRAPLUGIN-37001
+NEW_CHILD_CREATION=DEFERRED
+
 DRIVE_ROLE=HISTORY_BACKUP_RECOVERY
-PENDING_EXTERNAL_HANDOFF=LYVRA_PLUGIN_BACKUP_REFRESH
-PENDING_EXTERNAL_HANDOFF_PATH=handoff/LYVRA_PLUGIN_BACKUP_HANDOFF_CURRENT.md
-PENDING_HANDOFF_VALIDATION=PARTIAL
-PENDING_HANDOFF_RESULT=BLOCKED_PENDING_DIRECT_EVIDENCE
-
-## Continuity rule
-On 666PFS SYSTEMSTART or 666PFS WEITER, rehydrate from repository current state and pointer first.
-Do not promote history, backups, old handoffs or Drive material over a newer valid repository state.
-Do not auto-load children. Resolve only an explicitly selected PFS target.
-A pending external handoff may be read automatically as evidence, but it must not activate a child, mutate a foreign system, or transfer foreign authority.
-A blocked handoff remains blocked until direct evidence resolves its declared source release/archive evidence and the existing PFS target identity.
-
-## Evidence rule
 FOUND != VERIFIED
 SEARCH_RESULT != READBACK
 READ != REHYDRATED
