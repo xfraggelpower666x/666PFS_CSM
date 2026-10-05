@@ -28,13 +28,15 @@ REPO_ROLE=PRIMARY_RUNTIME_CONTROL_SURFACE
 DRIVE_ROLE=HISTORY_BACKUP_RECOVERY
 PENDING_EXTERNAL_HANDOFF=LYVRA_PLUGIN_BACKUP_REFRESH
 PENDING_EXTERNAL_HANDOFF_PATH=handoff/LYVRA_PLUGIN_BACKUP_HANDOFF_CURRENT.md
-PENDING_HANDOFF_ACTION=READ_AND_VALIDATE_ONLY_UNTIL_EXPLICIT_666PFS_UPDATE
+PENDING_HANDOFF_VALIDATION=PARTIAL
+PENDING_HANDOFF_RESULT=BLOCKED_PENDING_DIRECT_EVIDENCE
 
 ## Continuity rule
 On 666PFS SYSTEMSTART or 666PFS WEITER, rehydrate from repository current state and pointer first.
 Do not promote history, backups, old handoffs or Drive material over a newer valid repository state.
 Do not auto-load children. Resolve only an explicitly selected PFS target.
-A pending external handoff may be read automatically as evidence, but it must not activate a child, mutate PFS state, or transfer foreign authority without an explicit 666PFS UPDATE.
+A pending external handoff may be read automatically as evidence, but it must not activate a child, mutate a foreign system, or transfer foreign authority.
+A blocked handoff remains blocked until direct evidence resolves its declared source release/archive evidence and the existing PFS target identity.
 
 ## Evidence rule
 FOUND != VERIFIED
