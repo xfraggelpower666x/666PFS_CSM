@@ -1,33 +1,27 @@
 # Functional Child Migration Queue
 
+DATE=2026-10-06
 PRIORITY=ALL_EXISTING_CHILDREN_TO_REPO_BEFORE_NEW_CHILD_CREATION
-DATE=2026-10-05
 
-## Active migration progress
-REGISTERED_ACTIVE=23
+REGISTERED_ACTIVE=22
 READY_OR_VERIFIED_BOUND=19
 NEWLY_MIGRATED_RUNTIME_PAYLOADS=16
-PREEXISTING_READY_OR_BOUND=3
+ACTIVE_REMAINING=3
 
-## Remaining active work
-- PHG-3001 — source v2.13.0 VERIFIED; repeated h2 binary-transfer failure — WRITE_BLOCKED_TRANSFER
-- CTIO-7001 — registered identity found, direct payload source still not located — SOURCE_DISCOVERY_OPEN
-- DISCORD-14001 — source package VERIFIED (~98 MB) — LARGE_BINARY_TRANSFER_PENDING
-- CURES-16001 — runtime baseline v0.1.0 + purpose/semantic patch v0.1.1 reconciled read-only; repository payload write blocked by connector safety check — WRITE_BLOCKED_CONNECTOR_SECURITY
+PHG-3001=AUTHORITY_RECONCILIATION_REQUIRED
+DISCORD-14001=LARGE_BINARY_TRANSFER_PENDING
+CURES-16001=WRITE_BLOCKED_CONNECTOR_SECURITY
 
-## Preservation / backup work
-- SOUNDWAVE-34001 — v1.18.0 evidence found — payload migration pending
-- LIGHT-35001 — repo metadata verified; runtime not independently verified
-- WEBLYVRA-36001 — 14.1 MB backup package found — payload migration pending
-- LYVRAPLUGIN-37001 — existing child recovered; current LYVRA releases 0.13.10 / 0.1.11 verified; private-vault write requires fresh matching LYVRA approval for every operation
+CTIO-7001=RETIRED_DO_NOT_RESURRECT
 
-## Historical / reconciliation work
-- LYVRA-DOLMETSCHER-13001, UDF-19001, ASMIF-20001, ARCHEON-20001, GIFT-21001, CGF-31001 remain re-audit/quarantine as applicable.
-- URLMD-15001 and ISQF-24001 require registry reconciliation.
+WEBLYVRA-36001=READY_FOR_REPO_MIGRATION
+SOUNDWAVE-34001=EXTERNAL_SOURCE_BINDING_REQUIRED
+LIGHT-35001=RUNTIME_UNVERIFIED
+LYVRAPLUGIN-37001=EXISTING_CHILD_REFRESH_PENDING
 
-## Rules
-SOURCE_FOUND != PAYLOAD_MIGRATED
-PAYLOAD_MIGRATED != READY
-READY requires direct repository readback.
-NO_GENUINELY_NEW_CHILD_CREATION_UNTIL_EXISTING_MIGRATION_COMPLETE=TRUE
+URLMD-15001=RECONCILIATION_REQUIRED
+ISQF-24001=RECONCILIATION_REQUIRED
+ARCHEON-20001=HOLD
+CGF-31001=CONFLICT_QUARANTINE
+
 CHILD_AUTOLOAD=FORBIDDEN
