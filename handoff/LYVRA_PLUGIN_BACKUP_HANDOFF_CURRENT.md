@@ -88,3 +88,18 @@ PUBLIC_PFS_REPOSITORY_PAYLOAD_COPY=FORBIDDEN
 PRIVATE_BINARY_BACKUP_TARGET=REQUIRED_FOR_BYTE_COMPLETE_BACKUP
 METADATA_AND_PROVENANCE_IN_PUBLIC_REPO=ALLOWED
 PFS_BACKUP_MAY_NOT_BE_MARKED_BYTE_COMPLETE_UNTIL_PRIVATE_ARCHIVE_READBACK=TRUE
+
+
+## Authorized private backup target
+
+PRIVATE_BACKUP_REPOSITORY=xfraggelpower666x/LYVRA-PRIVATE-VAULT
+PRIVATE_BACKUP_BRANCH=main
+PRIVATE_BACKUP_WRITE_ROOT=backups/666PFS/LYVRA_PLUGIN_BACKUP/
+PRIVATE_BACKUP_CONTRACT=contracts/666PFS_LYVRA_PLUGIN_BACKUP_WRITE_CONTRACT.md
+PRIVATE_BACKUP_POINTER=VAULT_CURRENT_POINTER.json
+PRIVATE_BACKUP_AUTHORIZATION=CURRENT_AUTHORIZED_BOUNDED_WRITE_TARGET
+
+666PFS is authorized to write the exact private plugin archives and backup metadata only below the write root above.
+No write outside that root is authorized.
+PFS must verify the private-vault contract and pointer directly before writing.
+PFS must preserve older backups additively and perform private-repo readback before marking the backup VERIFIED.
