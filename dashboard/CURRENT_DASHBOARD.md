@@ -4,7 +4,6 @@ DATE=2026-10-05
 SYSTEM_ID=666PFS-CORE-001
 CORE_VERSION=2.7.3
 BRANCH=main
-SOURCE_STATE_COMMIT=873e75277ab4215a039500f951cccd65bb58b923
 AUTHORITY=REPO_FIRST
 REHYDRATION=VERIFIED
 666CSM=VERIFIED_INTERNAL_SERVICE
@@ -21,11 +20,20 @@ SELECTED_CHILD=NONE
 | Registry routing | VERIFIED |
 | Current state | VERIFIED |
 | Live-Circle continuity | VERIFIED |
-| Dashboard contracts | VERIFIED |
 | Child inventory | VERIFIED |
 | Functional migration queue | OPEN |
 | Identity conflict quarantine | ACTIVE |
 | Drive role | HISTORY_BACKUP_RECOVERY |
+
+## External handoff
+- LYVRA Plugin Backup refresh: PARTIAL validation
+- Handoff source head: 3e2a625818faf16f61728bc13394377132438dfd
+- Newer observed LYVRA head: 9fa69afc95ba8b3c7b7980a7a3340f4153b9ee69
+- Declared source head is direct parent of newer observed head
+- Exact plugin release IDs: NOT DIRECTLY VERIFIED FROM REPOSITORY
+- Existing PFS repo-native LYVRA Plugin Backup child: NOT FOUND
+- Result: BLOCKED_PENDING_DIRECT_EVIDENCE
+- LYVRA mutation: NONE
 
 ## Child overview
 - STREAM-5001 — VERIFIED external runtime binding
