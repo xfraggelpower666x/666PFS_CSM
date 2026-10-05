@@ -12,4 +12,5 @@ Repository-native control plane for 666PFS and its internal 666CSM service.
 - Child autoload: forbidden
 - Foreign-system autoload: forbidden
 
-Read `CURRENT_POINTER.md` first, then the governance files. Historical material must never be promoted automatically.
+## Rehydration entry
+Read `governance/SYSTEM_IDENTITY.md` first, then `governance/REHYDRATION_CONTRACT.md`, then resolve only the explicitly requested PFS target. Historical material must never be promoted automatically.
