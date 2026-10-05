@@ -30,12 +30,20 @@ REPO_NATIVE_CHILD_INVENTORY=CREATED
 FUNCTIONAL_CHILD_PAYLOAD_MIGRATION=OPEN
 BACKUP_ONLY_CLASS_SEPARATION=VERIFIED
 IDENTITY_CONFLICT_QUARANTINE=ACTIVE
+PENDING_EXTERNAL_HANDOFF=LYVRA_PLUGIN_BACKUP_REFRESH
+PENDING_EXTERNAL_HANDOFF_PATH=handoff/LYVRA_PLUGIN_BACKUP_HANDOFF_CURRENT.md
 
 ## Verified migrated/bound children
 - STREAM-5001: repo-native control metadata; verified external runtime binding
 - CODEFORGE-11001: repo-native metadata; binary runtime package present
 - 3DXUI-30001: repo-native metadata; binary runtime package and provenance present
 - LIGHT-35001: repo-first authority metadata; legacy Drive downgraded to history/backup evidence
+
+## Pending external handoff
+- LYVRA Plugin Backup refresh is queued as repository-native input evidence.
+- Source target: LYVRA Account Plugin 0.13.10 and Native Runtime 0.1.11.
+- Reading this handoff does not select or autoload a child.
+- Application requires explicit 666PFS UPDATE under native PFS governance.
 
 ## Open child work
 - MITF-18001: controlled pointer rebase to verified v1.2.0 frozen release
