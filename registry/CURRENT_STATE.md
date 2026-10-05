@@ -32,6 +32,8 @@ BACKUP_ONLY_CLASS_SEPARATION=VERIFIED
 IDENTITY_CONFLICT_QUARANTINE=ACTIVE
 PENDING_EXTERNAL_HANDOFF=LYVRA_PLUGIN_BACKUP_REFRESH
 PENDING_EXTERNAL_HANDOFF_PATH=handoff/LYVRA_PLUGIN_BACKUP_HANDOFF_CURRENT.md
+PENDING_EXTERNAL_HANDOFF_VALIDATION=PARTIAL
+PENDING_EXTERNAL_HANDOFF_RESULT=BLOCKED_PENDING_DIRECT_EVIDENCE
 
 ## Verified migrated/bound children
 - STREAM-5001: repo-native control metadata; verified external runtime binding
@@ -40,10 +42,14 @@ PENDING_EXTERNAL_HANDOFF_PATH=handoff/LYVRA_PLUGIN_BACKUP_HANDOFF_CURRENT.md
 - LIGHT-35001: repo-first authority metadata; legacy Drive downgraded to history/backup evidence
 
 ## Pending external handoff
-- LYVRA Plugin Backup refresh is queued as repository-native input evidence.
-- Source target: LYVRA Account Plugin 0.13.10 and Native Runtime 0.1.11.
-- Reading this handoff does not select or autoload a child.
-- Application requires explicit 666PFS UPDATE under native PFS governance.
+- LYVRA Plugin Backup refresh handoff was read as evidence under explicit 666PFS UPDATE.
+- Handoff declared LYVRA source head: 3e2a625818faf16f61728bc13394377132438dfd.
+- Validation observed newer LYVRA branch head: 9fa69afc95ba8b3c7b7980a7a3340f4153b9ee69.
+- The declared source head is the direct parent of the newer observed head.
+- Exact Account Plugin and Native Runtime release IDs were not directly verifiable from the LYVRA GitHub repository during this validation.
+- No repo-native PFS child named LYVRA Plugin Backup was found in current repository evidence.
+- Backup refresh remains BLOCKED until direct plugin-release/archive evidence and the existing PFS backup-child identity/storage target are verified.
+- No LYVRA authority, plugin ID, identity, Pet state or music state was modified.
 
 ## Open child work
 - MITF-18001: controlled pointer rebase to verified v1.2.0 frozen release
