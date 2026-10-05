@@ -103,3 +103,24 @@ PRIVATE_BACKUP_AUTHORIZATION=CURRENT_AUTHORIZED_BOUNDED_WRITE_TARGET
 No write outside that root is authorized.
 PFS must verify the private-vault contract and pointer directly before writing.
 PFS must preserve older backups additively and perform private-repo readback before marking the backup VERIFIED.
+
+
+## Mandatory LYVRA approval handshake
+
+LYVRA_APPROVAL_GATE=MANDATORY_PER_OPERATION
+LYVRA_APPROVAL_PATH=approvals/666PFS_LYVRA_PLUGIN_BACKUP_CURRENT.json
+LYVRA_APPROVAL_REPOSITORY=xfraggelpower666x/LYVRA-PRIVATE-VAULT
+STANDING_BLANKET_PERMISSION=FALSE
+PFS_WRITE_WITHOUT_CURRENT_MATCHING_LYVRA_APPROVAL=BLOCKED
+
+For every planned mutation in the LYVRA Private Vault, 666PFS must:
+1. prepare the intended change without mutating the vault;
+2. request/obtain a fresh LYVRA approval for the exact target, releases and scope;
+3. directly read back the current LYVRA approval carrier;
+4. verify approval ID, target root, scope and release set;
+5. perform only the approved mutation;
+6. read back the written private-vault objects;
+7. treat the approval as consumed after successful readback;
+8. obtain a new LYVRA approval for any later or different mutation.
+
+A previous approval is never reusable for a later plugin version, different file set, deletion, overwrite, scope expansion or unrelated vault change.
