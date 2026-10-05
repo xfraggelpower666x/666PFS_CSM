@@ -13,4 +13,10 @@ Repository-native control plane for 666PFS and its internal 666CSM service.
 - Foreign-system autoload: forbidden
 
 ## Rehydration entry
-Read `governance/SYSTEM_IDENTITY.md` first, then `governance/REHYDRATION_CONTRACT.md`, then resolve only the explicitly requested PFS target. Historical material must never be promoted automatically.
+1. Read `governance/SYSTEM_IDENTITY.md`.
+2. Read `governance/REHYDRATION_CONTRACT.md`.
+3. Read `csm/COORDINATION_CONTRACT.md`.
+4. Read `registry/README.md` and `registry/REHYDRATION_MATRIX.md`.
+5. Resolve only the explicitly requested PFS target.
+
+Historical material must never be promoted automatically.
