@@ -29,7 +29,7 @@ Source: verified PFS child registry, normalized on 2026-10-05.
 
 ## Preservation / backup class
 - SOUNDWAVE-34001 — preservation/versioning/restore role
-- LIGHT-35001 — backup-only, runtime not verified
+- LIGHT-35001 — repo-first backup metadata; WebRadio GitHub source authority; Drive legacy-history only; runtime not verified
 - WEBLYVRA-36001 — backup-only, not loadable
 
 ## Historical / special handling
