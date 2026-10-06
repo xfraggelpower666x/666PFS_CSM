@@ -1,0 +1,16 @@
+# 666STREAM STRUCTURE CONTROL — Repository Backup
+
+SOURCE_REPOSITORY=xfraggelpower666x/WebRadio-666SOUNDsDESIGn
+SOURCE_BRANCH=WebRadio-666SOUNDsDESIGn
+SOURCE_PATH=666STREAM_STRUCTURE_CONTROL/recovery/666STREAM_STRUCTURE_CONTROL_SYSTEMSICHERUNG_2026-10-06.zip
+SOURCE_GIT_BLOB_SHA=e38218cf31e28e3063737e293fe009f149ef6138
+SOURCE_SIZE_BYTES=undefined
+BACKUP_CLASS=RECOVERY_ZIP_RELOCATED_FROM_ACTIVE_RADIO_TREE
+BACKUP_BRANCH=backup/666stream-structure-control-2026-10-06
+RADIO_RUNTIME_FILES_MUTATED=FALSE
+RADIO_DEPLOYMENT_MUTATED=FALSE
+REASON=Release Integrity forbids nested ZIP files in active radio source tree
+DATE=2026-10-06
+
+The ZIP is preserved byte-for-byte as a Git blob on this backup branch.
+The recovery contract and freeze receipt remain in the WebRadio repository.
