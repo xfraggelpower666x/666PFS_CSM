@@ -3,7 +3,7 @@
 ENTRY_ID=CURSORFRAME-42001
 SYSTEM_ID=666PFS-CURSORFRAME-001
 VERSION=0.3.0
-STATE=REGISTERED_PARTIAL_BINARY_IMPORT_PENDING
+STATE=VERIFIED_READY_V0.3.0
 
 1. Read SYSTEM_IDENTITY.md.
 2. Read SOURCE_MANIFEST.md.
@@ -13,7 +13,7 @@ STATE=REGISTERED_PARTIAL_BINARY_IMPORT_PENDING
 6. Do not bind or merge it with CURSORGEN-41001 or CURES-16001.
 7. Preserve offline-only architecture: no Cloudflare, no account, no telemetry, no server dependency.
 8. Preserve non-destructive project handling, CUR/ANI processing, Windows activation, backup, restore and readback design.
-9. Keep READY promotion blocked until repository binary import and remote byte readback pass.
+9. Repository binary import and remote byte readback are PASS; continue from VERIFIED_READY_V0.3.0. Windows runtime verification remains separate and READBACK_PENDING.
 10. CHILD_AUTOLOAD remains forbidden.
 
 CHILD_AUTOLOAD=FORBIDDEN
