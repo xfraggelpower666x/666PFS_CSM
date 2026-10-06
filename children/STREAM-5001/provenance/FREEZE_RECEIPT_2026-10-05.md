@@ -19,6 +19,9 @@ FREEZE_ARTIFACT_EXPIRED=false
 SOURCE_READBACK=PASS
 DEPLOYMENT_READBACK=PASS
 FREEZE_READBACK=PASS
-BINDING_REPAIR=PASS_PENDING_PFS_PR_MERGE
+BINDING_REPAIR=PASS
+PFS_REPAIR_PR=2
+PFS_REPAIR_MERGE_COMMIT=bd2fb74806cf83fcc3a28e96d3e23808f3b52710
+PFS_MAIN_READBACK=PASS
 
 This receipt records repository evidence only. It does not claim a separate Drive write. GitHub is the current PFS/CSM authority; Drive remains history/backup/recovery under the repo-first contract.
