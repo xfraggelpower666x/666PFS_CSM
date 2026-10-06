@@ -1,0 +1,42 @@
+{
+  "card_id": "PFS-BINARY-BRIDGE-AUTOGENERATOR-001",
+  "system_id": "666PFS-CORE-001",
+  "namespace": "666PFS",
+  "version": "1.0.0",
+  "status": "ACTIVE",
+  "scope": "ALL_PFS_CHILDREN",
+  "trigger_class": [
+    "ZIP_BINARY_IMPORT_BLOCKED",
+    "REPO_BINARY_IMPORT_PENDING",
+    "REPOSITORY_BYTE_READBACK_PENDING",
+    "BINARY_TRANSFER_BLOCKED"
+  ],
+  "eligibility": {
+    "source_available": true,
+    "source_hash_verified": true,
+    "source_size_verified": true,
+    "publication_allowed": true,
+    "target_unambiguous": true
+  },
+  "action": "PREPARE_COMPLETE_REPAIR_PACKAGE_AUTOMATICALLY",
+  "user_reprompt_required": false,
+  "completion_requires": [
+    "REMOTE_READBACK_PASS",
+    "666PFS_UPDATE",
+    "FREEZE",
+    "POINTER_LAST"
+  ],
+  "concurrency_policy": "SAFE_REBASE_OR_BLOCK",
+  "failure_policy": "HOLD_OR_BLOCK",
+  "waiting_source_state": "AUTO_BRIDGE_QUEUE_WAITING_FOR_SOURCE_BYTES",
+  "evidence_conflict_state": "HOLD_EVIDENCE_CONFLICT",
+  "hard_fences": [
+    "NO_FORCE_PUSH",
+    "NO_POINTER_MUTATION_BY_BRIDGE",
+    "NO_PFS_STATE_MUTATION_BY_BRIDGE",
+    "NO_PRIVATE_PAYLOAD_TO_PUBLIC_REPO",
+    "NO_CHILD_AUTOLOAD",
+    "NO_CROSS_SYSTEM_MERGE"
+  ],
+  "proven_reference": "CYBERINTROHQ-39001"
+}
