@@ -1,0 +1,13 @@
+# 666PFS Pre-Change Receipt
+
+DATE=2026-10-07
+SCOPE=CANONICAL_STATUS_REPAIR
+BASE_HEAD=de5abbe41f1c7e4b6685b02762223e7aa692cf18
+BACKUP_BRANCH=backup/pre-pfs-canonical-status-repair-20261007
+TARGETS=registry/CURRENT_STATE.md,handoff/LIVE_CIRCLE_CURRENT.md,registry/CURRENT_POINTER.md
+REPAIR=Replace stale top-level CYBERINTRO auto-bridge waiting state with current direct-source-bytes-required state; preserve historical sections.
+CYBERINTRO_CHILD_MUTATION=FALSE
+CURES_CHILD_MUTATION=FALSE
+FOREIGN_SYSTEM_MUTATION=FALSE
+CHILD_AUTOLOAD=FORBIDDEN
+CROSS_SYSTEM_MERGE=FORBIDDEN
