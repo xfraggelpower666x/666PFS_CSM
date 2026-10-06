@@ -1,7 +1,7 @@
 # 666PFS Systemsicherung Repo Mirror Standard
 
 STATUS=ACTIVE
-VERSION=1.0
+VERSION=1.1
 DATE=2026-10-06
 SYSTEM_ID=666PFS-CORE-001
 NAMESPACE=666PFS
@@ -24,14 +24,15 @@ EXTERNAL_NATIVE_REPO_BACKUP_ROOT=USE_NATIVE_REPOSITORY_RECOVERY_PATH
 PROJECT_NAME_IS_NOT_AUTHORITY=TRUE
 
 ## Mirror contract
-For each completed freeze/system backup:
-1. create a downloadable ZIP for the user;
-2. calculate SHA-256 and exact byte size;
-3. mirror the ZIP into the responsible repository/recovery directory when repository writes are permitted;
-4. write a manifest beside the ZIP;
-5. perform repository metadata/byte identity readback where technically available;
-6. mark READY only after required readback passes;
-7. publish Current Pointer last for PFS-native updates.
+1. create a downloadable ZIP for the user.
+2. calculate SHA-256 and exact byte size.
+3. mirror the ZIP into the responsible repository recovery directory when writes are permitted.
+4. for one operation affecting multiple PFS scopes, mirror the same consolidated ZIP into the core recovery root and each affected child recovery directory.
+5. external native systems remain in their own native repository.
+6. write a manifest beside the ZIP.
+7. perform repository metadata or byte identity readback where technically available.
+8. keep the last VERIFIED_READY version promoted while a newer candidate still requires readback.
+9. publish Current Pointer last for PFS-native updates.
 
 ## Preservation
 PRESERVE_NATIVE_IDENTITY=TRUE
