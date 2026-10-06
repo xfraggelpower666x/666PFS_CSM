@@ -11,4 +11,9 @@
 9. Any source-commit mismatch, identity conflict or missing evidence produces HOLD.
 10. Child autoload remains forbidden.
 
-READY means: repository identity intact, source binding resolvable, and no authority conflict.
+READY means: origin repository identity intact, source binding resolvable, and no authority conflict.
+
+LIVE_AUTHORITY=ORIGIN_REPOSITORY
+PFS_CHILD_ROLE=BACKUP_RECOVERY_REGISTRY_ONLY
+PFS_CHILD_LIVE_AUTHORITY_OVERRIDE=FORBIDDEN
+PFS_CHILD_RUNTIME_AUTHORITY=NONE
