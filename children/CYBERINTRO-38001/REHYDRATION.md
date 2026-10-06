@@ -8,8 +8,14 @@
 6. Keep Phase 1 and Phase 2 logically separate.
 7. Preserve Phase-1 background through the transition into Phase 2.
 8. Phase 1 must terminate visibly with READY.
-9. No automatic redirect may be introduced without explicit user instruction.
-10. Missing binary assets produce PARTIAL / HOLD; never silently replace them.
+9. In Phase 2, keep the center emblem static/effect-free.
+10. SYSTEM ONLINE must appear below the center emblem.
+11. SYSTEM ONLINE fades/blinks exactly 3 times over ~5.4 seconds.
+12. After the third fade, SYSTEM ONLINE remains visible for 2 seconds.
+13. Only after that hold may the host system start via lyvra:system-start or optional window.startProjectSystem().
+14. No automatic Phase-2 loop/restart may be introduced.
+15. No automatic redirect may be introduced without explicit user instruction.
+16. Missing repo binary payload produces PARTIAL / HOLD; never silently replace it.
 
 FOUND != VERIFIED
 SEARCH_RESULT != READBACK

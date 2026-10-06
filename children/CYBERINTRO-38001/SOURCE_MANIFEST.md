@@ -1,32 +1,36 @@
 # CYBERINTRO-38001 Source Manifest
 
 DATE=2026-10-06
-VERSION=1.0.0
-SOURCE_ARTIFACT=666_cyber_intro_template_v1.0.0.zip
-SOURCE_SHA256=f29bcd43fef19665a883e120791cb539181aaf6c838a5cfa532aff840275c762
-SOURCE_SIZE_APPROX=5.0MiB
+VERSION=1.9.0
+SOURCE_ARTIFACT=666_CYBER_INTRO_HUD_TEMPLATE_v1_9_SLOW_PHASE2_HOLD_SYSTEMSICHERUNG.zip
+SOURCE_SHA256=ddae52e62159941420bd8db24230be569ccb2e764aa36f877ec34bef00c5030d
+SOURCE_SIZE_BYTES=793497
 SOURCE_CREATED_IN_CURRENT_CHAT=TRUE
 
 EXPECTED_TEXT_FILES:
 - README.md
 - index.html
-- css/cyber-intro.css
-- js/cyber-intro.js
-- docs/INTEGRATION.md
+- FREEZE_MANIFEST.json
+- assets/css/666-cyber-intro-hud-sequence.css
+- assets/js/666-cyber-intro-sequence.js
+- assets/js/666-cyber-hud-logo.js
+- docs/AUDIT_REPORT_v1_7.md
+- docs/CHANGELOG_v1_7.md
+- docs/CHANGELOG_v1_8.md
+- docs/CHANGELOG_v1_9.md
 
 EXPECTED_BINARY_ASSETS:
-- assets/images/brand_lyvra_primary.png
-- assets/images/brand_666soundsdesign.png
-- assets/images/intro_background.jpg
-- assets/images/cyber_core.png
-- assets/images/hud_eyes.png
-- assets/images/speaker_01.png
-- assets/images/speaker_02.png
-- assets/images/speaker_03.png
-- assets/images/speaker_04.png
-- assets/images/character_primary.png
+- assets/images/intro-background.jpg
+- assets/images/intro-brand.png
+- assets/images/center-emblem.png
 
+PHASE_1_TERMINAL=READY
+PHASE_2_SYSTEM_ONLINE=TRIPLE_FADE_ONE_SHOT
+PHASE_2_FINAL_HOLD_SECONDS=2.0
+SYSTEM_START_EVENT=lyvra:system-start
+REDIRECT=FORBIDDEN
 ORIGINAL_FILES_MUTATED=FALSE
 NEUTRAL_COPY_NAMES=TRUE
+
 REPO_BINARY_PAYLOAD_STATUS=PENDING
-RUNTIME_STATUS=PARTIAL_UNTIL_BINARY_ASSET_READBACK
+RUNTIME_STATUS=PARTIAL_UNTIL_BINARY_PAYLOAD_READBACK
