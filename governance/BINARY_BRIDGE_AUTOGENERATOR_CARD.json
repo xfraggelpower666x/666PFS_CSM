@@ -2,21 +2,21 @@
   "card_id": "PFS-BINARY-BRIDGE-AUTOGENERATOR-001",
   "system_id": "666PFS-CORE-001",
   "namespace": "666PFS",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "status": "ACTIVE",
   "scope": "ALL_PFS_CHILDREN",
   "trigger_class": [
-    "ZIP_BINARY_IMPORT_BLOCKED",
-    "REPO_BINARY_IMPORT_PENDING",
-    "REPOSITORY_BYTE_READBACK_PENDING",
-    "BINARY_TRANSFER_BLOCKED"
+    "DIRECT_BINARY_MIRROR_BLOCKED",
+    "DIRECT_REPOSITORY_BYTE_READBACK_BLOCKED",
+    "BINARY_TRANSFER_BLOCKED_AFTER_DIRECT_ATTEMPT"
   ],
   "eligibility": {
     "source_available": true,
     "source_hash_verified": true,
     "source_size_verified": true,
     "publication_allowed": true,
-    "target_unambiguous": true
+    "target_unambiguous": true,
+    "direct_path_blocked": true
   },
   "action": "PREPARE_COMPLETE_REPAIR_PACKAGE_AUTOMATICALLY",
   "user_reprompt_required": false,
@@ -36,7 +36,12 @@
     "NO_PFS_STATE_MUTATION_BY_BRIDGE",
     "NO_PRIVATE_PAYLOAD_TO_PUBLIC_REPO",
     "NO_CHILD_AUTOLOAD",
-    "NO_CROSS_SYSTEM_MERGE"
+    "NO_CROSS_SYSTEM_MERGE",
+    "NO_BRIDGE_IF_COMPLETE_DIRECT_ZIP_PATH_AVAILABLE",
+    "NO_DELTA_IF_COMPLETE_DIRECT_ZIP_PATH_AVAILABLE"
   ],
-  "proven_reference": "CYBERINTROHQ-39001"
+  "proven_reference": "CYBERINTROHQ-39001",
+  "direct_full_zip_priority": true,
+  "direct_full_zip_behavior": "MIRROR_DIRECTLY_AND_DO_NOT_CREATE_BRIDGE",
+  "bridge_is_fallback_only": true
 }
