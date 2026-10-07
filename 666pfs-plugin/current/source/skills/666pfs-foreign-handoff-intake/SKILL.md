@@ -1,6 +1,6 @@
 ---
 name: 666pfs-foreign-handoff-intake
-description: "Inspect LYVRA and CLIC handoffs and proposals read-only during each PFS UPDATE or requested intake audit."
+description: "Inspect LYVRA and CLIC handoffs, instructions, recommendations and proposals read-only during every PFS UPDATE."
 ---
 
 Read [authority](../../references/authority.md) before execution. Current repository contracts outrank this workflow.
@@ -21,6 +21,8 @@ LYVRA:
 - improvement proposals
 - architecture proposals
 - learning proposals
+- instructions/recommendations explicitly addressed to PFS
+- private-repository backup integration requirements
 
 CLIC:
 - active authority branch/head
@@ -31,29 +33,28 @@ CLIC:
 - improvement proposals
 - architecture proposals
 - learning proposals
+- instructions/recommendations explicitly addressed to PFS
 
 Rules:
 
 FOREIGN_PROPOSAL_CHECK_ON_EVERY_PFS_UPDATE=REQUIRED
+FOREIGN_RECOMMENDATION_CHECK_ON_EVERY_PFS_UPDATE=REQUIRED
+FOREIGN_INSTRUCTION_CHECK_ON_EVERY_PFS_UPDATE=REQUIRED
 LYVRA_HANDOFF_CHECK_ON_EVERY_PFS_UPDATE=REQUIRED
 CLIC_HANDOFF_CHECK_ON_EVERY_PFS_UPDATE=REQUIRED
 
-Foreign proposal presence NEVER equals adoption.
-
-Every proposal must be classified:
-
+Classify all incoming items:
 VERIFIZIERT
 ABGELEITET
 VORGESCHLAGEN
 OFFEN
 BLOCKIERT
 
-PFS_NATIVE_ADOPTION_REQUIRES_COMPATIBILITY_AUDIT=TRUE
+Verified durable PFS-relevant items may be adopted only after PFS compatibility audit. Foreign proposal presence NEVER equals adoption or foreign authority.
 
+PFS_NATIVE_ADOPTION_REQUIRES_COMPATIBILITY_AUDIT=TRUE
 FOREIGN_PROPOSAL_IS_NOT_AUTHORITY=TRUE
 
 FOREIGN_AUTOLOAD=FORBIDDEN
 FOREIGN_MUTATION=FORBIDDEN
 CROSS_SYSTEM_MERGE=FORBIDDEN
-
----
