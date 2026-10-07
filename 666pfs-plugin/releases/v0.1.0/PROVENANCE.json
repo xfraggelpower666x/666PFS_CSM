@@ -1,0 +1,10 @@
+{
+  "plugin_id": "plugins_6ac695d745d881919c3ea2766c09e6ee",
+  "release_id": "pluginrel_6ac695d9105c8191bd34ec4af00cbaec",
+  "version": "0.1.0",
+  "source": "source",
+  "status": "PRESERVED_RECOVERY_SNAPSHOT",
+  "binary_assets": "IDENTICAL_TO_LIVE_BYTES_LOCAL_VERIFIED",
+  "publisher_metadata_normalization": "Author email omitted from public recovery source; original archive not published. Runtime files and binary assets preserved.",
+  "source_byte_parity": "PARTIAL_PUBLISHER_METADATA_NORMALIZATION"
+}

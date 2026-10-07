@@ -1,0 +1,27 @@
+{
+  "apps": "./.app.json",
+  "author": {
+    "name": "FRAGGLEPOWER666"
+  },
+  "description": "Repository-first runtime for existing 666PFS-CORE-001 with internal CSM coordination, daemon LifeCircle, child governance, proposal intake, continuity, recovery and evidence-first dashboards.",
+  "interface": {
+    "capabilities": [
+      "Interactive",
+      "skills",
+      "Write"
+    ],
+    "category": "Productivity",
+    "composerIcon": "./assets/pfs-csm-icon.png",
+    "defaultPrompt": "666PFS SYSTEMSTART",
+    "developerName": "FRAGGLEPOWER666",
+    "displayName": "P.F.S. - C.S.M.",
+    "logo": "./assets/pfs-csm-icon.png",
+    "longDescription": "Repository-first runtime for existing 666PFS-CORE-001 with internal CSM coordination, daemon LifeCircle, child governance, proposal intake, continuity, recovery and evidence-first dashboards.",
+    "shortDescription": "PFS / CSM Native Runtime",
+    "websiteURL": "https://github.com/xfraggelpower666x/666PFS_CSM"
+  },
+  "keywords": [],
+  "name": "pfs-csm-native-runtime",
+  "skills": "./skills",
+  "version": "0.1.0"
+}

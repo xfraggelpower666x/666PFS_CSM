@@ -1,0 +1,3 @@
+# Plugin Restore Contract
+
+Read current PFS authority and exact plugin release first. Select an immutable source snapshot and its verified archive receipt. Verify actual SHA-256, size, entry list, text and binary files. Extract to an isolated candidate directory; compare every file. Restore never promotes history automatically. Republishing requires fresh native authority, preserved plugin ID/audience/permissions, a new valid package version, optimistic release concurrency, live readback and parity. Backup child is recovery registry only. Current v0.1.0 public recovery manifests omit publisher email; v0.1.1 source and archive preserve exact live bytes.
