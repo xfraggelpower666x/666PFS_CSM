@@ -1,38 +1,41 @@
 {
-  "schema": "666PFS_PLUGIN_CURRENT_v1",
+  "schema": "666PFS_PLUGIN_CURRENT_v2",
   "plugin_id": "plugins_6ac695d745d881919c3ea2766c09e6ee",
   "display_name": "P.F.S. - C.S.M.",
   "technical_name": "pfs-csm-native-runtime",
-  "version": "0.1.2",
-  "release_id": "pluginrel_6ac699cffc748191a3f8adb8a8d73a76",
+  "version": "0.1.4",
+  "release_id": "pluginrel_6ac6a92d73148191a0e537a559fdcd7a",
   "repository": "xfraggelpower666x/666PFS_CSM",
   "branch": "main",
   "source_root": "666pfs-plugin/current/source",
-  "current_source_snapshot": "666pfs-plugin/releases/v0.1.2/source",
-  "source_body_head_before_pointer": "d79b5689d687e638bc82232a413a69ceeccbbedb",
-  "source_fingerprint_sha256": "05f12676100b2ebf47431fe47c1dae68f3c09facc87a8d2f029b63c8068dc3a0",
-  "source_parity": "PASS_20_OF_20_REPO_LIVE_TEXT_AND_UNCHANGED_BINARY_CONTINUITY",
-  "binary_parity": "PASS_2_OF_2_UNCHANGED_FROM_VERIFIED_0.1.1_OVERLAY",
-  "last_verified_live_readback": {
-    "version": "0.1.2",
-    "release_id": "pluginrel_6ac699cffc748191a3f8adb8a8d73a76",
+  "current_source_snapshot": "666pfs-plugin/releases/v0.1.4/source",
+  "source_tree_sha": "9ba425c417bcc24fa552abd517be76851a0477e7",
+  "source_file_count": 22,
+  "current_to_snapshot_git_blob_identity": "PASS_22_OF_22",
+  "binary_assets": {
+    "icon": {
+      "path": "assets/pfs-csm-icon.png",
+      "sha256": "9e49137aca0ae68c1be8e92959bdfd12e37623556fe21618cf1c18b580a79c32",
+      "status": "UNCHANGED_VERIFIED"
+    },
+    "logo": {
+      "path": "assets/pfs-csm-logo.png",
+      "sha256": "7cd5c17ccd5aa20613805cda3415d285752864286af315d6d27438cb3074c528",
+      "status": "UNCHANGED_VERIFIED"
+    }
+  },
+  "live_readback": {
+    "version": "0.1.4",
+    "release_id": "pluginrel_6ac6a92d73148191a0e537a559fdcd7a",
     "scope": "USER",
     "discoverability": "PRIVATE",
-    "source_files": "VERIFIED_20_PRESENT",
-    "full_archive_access": "AVAILABLE_BUT_LOCAL_MATERIALIZATION_BLOCKED"
+    "source_files": "VERIFIED_22_PRESENT"
   },
-  "last_backup_receipt": "PENDING_V0.1.2_ARCHIVE_READBACK",
-  "backup_archive": "PENDING_V0.1.2_ARCHIVE_READBACK",
-  "backup_archive_sha256": "READBACK_PENDING",
-  "backup_archive_size": "READBACK_PENDING",
-  "backup_status": "READBACK_PENDING_ARCHIVE_MATERIALIZATION",
+  "backup_mode": "IMMUTABLE_REPO_FULL_SNAPSHOT_FALLBACK",
+  "backup_status": "VERIFIED_COMPLETE_REPO_SNAPSHOT_22_OF_22",
+  "packaged_plugin_archive_status": "READBACK_PENDING_NONBLOCKING_FOR_REPO_SNAPSHOT",
   "backup_child_id": "PFSPLUGIN-44001",
   "backup_child_functional_identity": "666PFS_PLUGIN_BACKUP_RECOVERY_RELEASE_PROVENANCE",
-  "backup_child_status": "VERIFIED_BOUND",
-  "plugin_impact_status": "PLUGIN_UPDATE_COMPLETED_BACKUP_READBACK_PENDING",
-  "skill_count": 12,
-  "isolated_restore_byte_comparison": "PENDING_V0.1.2_ARCHIVE",
-  "fresh_chat_runtime_acceptance": "OPEN",
-  "pointer_publication": "PENDING_CURRENT_UPDATE_POINTER_LAST",
-  "no_mutation_after_pointer": false
+  "plugin_impact_status": "PLUGIN_UPDATE_COMPLETED_REPO_BACKUP_VERIFIED",
+  "skill_count": 13
 }
