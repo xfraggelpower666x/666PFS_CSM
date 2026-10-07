@@ -1,7 +1,7 @@
 {
   "plugin_id": "plugins_6ac695d745d881919c3ea2766c09e6ee",
-  "release_id": "pluginrel_6ac696de351c8191a7822429918409b1",
-  "version": "0.1.1",
+  "release_id": "pluginrel_6ac699cffc748191a3f8adb8a8d73a76",
+  "version": "0.1.2",
   "display_name": "P.F.S. - C.S.M.",
   "technical_name": "pfs-csm-native-runtime",
   "repository": "xfraggelpower666x/666PFS_CSM",
@@ -109,16 +109,17 @@
     }
   ],
   "file_count": 20,
-  "source_fingerprint_sha256": "35784a8827355343f550fb3ae848bae8dd5ac0ca9530c4058417310895fb2c02",
-  "archive_sha256": "ad6543bddbfaa18a2ef68b92721a0bad2d9d4479f5868617f250403c82879f83",
-  "archive_size": 5803991,
-  "archive_path": "666pfs-plugin/recovery/pfs-csm-native-runtime-v0.1.1-live.tar.gz",
+  "source_fingerprint_sha256": "05f12676100b2ebf47431fe47c1dae68f3c09facc87a8d2f029b63c8068dc3a0",
+  "archive_sha256": "READBACK_PENDING",
+  "archive_size": "READBACK_PENDING",
+  "archive_path": "PENDING_V0.1.2_ARCHIVE_READBACK",
   "backup_child_id": "PFSPLUGIN-44001",
-  "source_parity": "PASS_20_OF_20",
-  "binary_parity": "PASS_2_OF_2",
-  "backup_status": "PASS",
+  "source_parity": "PASS_20_OF_20_REPO_LIVE_TEXT_AND_UNCHANGED_BINARY_CONTINUITY",
+  "binary_parity": "PASS_2_OF_2_UNCHANGED_FROM_VERIFIED_0.1.1_OVERLAY",
+  "backup_status": "READBACK_PENDING_ARCHIVE_MATERIALIZATION",
   "runtime_acceptance": "OPEN_FRESH_CHAT_REQUIRED",
-  "backup_receipt": "666pfs-plugin/recovery/BACKUP_RECEIPTS/v0.1.1-2026-10-07.json",
+  "backup_receipt": "PENDING_V0.1.2_ARCHIVE_READBACK",
   "backup_readback_commit": "8dec7b2b89acd2b5358127d37619ff0a9fb08504",
-  "restore_status": "PASS_ISOLATED_BYTE_COMPARISON"
+  "restore_status": "PENDING_V0.1.2_ARCHIVE",
+  "current_source_snapshot": "666pfs-plugin/releases/v0.1.2/source"
 }
