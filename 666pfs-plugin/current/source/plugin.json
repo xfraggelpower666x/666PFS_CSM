@@ -1,30 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "author": {
-    "name": "FRAGGLEPOWER666"
-  },
+  "author": {"name": "FRAGGLEPOWER666"},
   "description": "Repository-first runtime for existing 666PFS-CORE-001 with internal CSM coordination, daemon LifeCircle, child governance, proposal intake, continuity, recovery and evidence-first dashboards.",
-  "extensions": {
-    "com.openai": {
-      "apps": "./.app.json",
-      "interface": {
-        "capabilities": [
-          "Interactive",
-          "skills",
-          "Write"
-        ],
-        "category": "Productivity",
-        "composerIcon": "./assets/pfs-csm-icon.png",
-        "defaultPrompt": "666PFS SYSTEMSTART",
-        "developerName": "FRAGGLEPOWER666",
-        "displayName": "P.F.S. - C.S.M.",
-        "logo": "./assets/pfs-csm-icon.png",
-        "longDescription": "Repository-first runtime for existing 666PFS-CORE-001 with internal CSM coordination, daemon LifeCircle, child governance, proposal intake, continuity, recovery and evidence-first dashboards.",
-        "shortDescription": "PFS / CSM Native Runtime",
-        "websiteURL": "https://github.com/xfraggelpower666x/666PFS_CSM"
-      }
-    }
-  },
+  "extensions": {"com.openai":{"apps":"./.app.json","interface":{"capabilities":["Interactive","skills","Write"],"category":"Productivity","composerIcon":"./assets/pfs-csm-icon.png","defaultPrompt":"666PFS SYSTEMSTART","developerName":"FRAGGLEPOWER666","displayName":"P.F.S. - C.S.M.","logo":"./assets/pfs-csm-icon.png","longDescription":"Repository-first runtime for existing 666PFS-CORE-001 with internal CSM coordination, daemon LifeCircle, child governance, proposal intake, continuity, recovery and evidence-first dashboards.","shortDescription":"PFS / CSM Native Runtime","websiteURL":"https://github.com/xfraggelpower666x/666PFS_CSM"}}},
   "name": "pfs-csm-native-runtime",
-  "version": "0.1.4"
+  "version": "0.1.6"
 }

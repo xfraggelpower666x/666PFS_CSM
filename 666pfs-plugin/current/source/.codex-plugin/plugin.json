@@ -17,7 +17,7 @@
     "websiteURL": "https://github.com/xfraggelpower666x/666PFS_CSM"
   },
   "name": "pfs-csm-native-runtime",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Repository-first runtime for existing 666PFS-CORE-001 with internal CSM coordination, daemon LifeCircle, child governance, proposal intake, continuity, recovery and evidence-first dashboards.",
   "author": {
     "name": "FRAGGLEPOWER666"

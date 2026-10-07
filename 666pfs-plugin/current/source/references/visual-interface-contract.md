@@ -1,6 +1,6 @@
-# PFS / CSM Visual Interface Contract
+# PFS / CSM GPT-Native Visual Interface Contract
 
-Purpose: evidence-first visual presentation of verified runtime state.
+Presentation surface: ChatGPT conversation UI, not ASCII and not an external dashboard by default.
 
 Hard guards:
 - VISUAL_NE_AUTHORITY
@@ -13,15 +13,9 @@ Hard guards:
 - SEARCH_RESULT_NE_READBACK
 - READ_NE_REHYDRATED
 - POINTER_LAST_REQUIRED_FOR_PUBLISHED_CURRENT
+- FAKE_BUTTONS_FORBIDDEN
+- FAKE_PROGRESS_FORBIDDEN
 
-Recommended structure: header identity card, authority/current card, lifecycle card, child/scope card, evidence/status matrix, blockers/readbacks, handoff card, next-action card.
+Preferred composition: heading, evidence status, native table/sections, measured progress if available, blocker/readback note, next valid actions.
 
-Visual Standstill / Freeze card:
-- reason for stop
-- last verified checkpoint
-- current lock/write state
-- unresolved obligations
-- exact return anchor
-- whether mutation is forbidden, pending or complete
-
-The view is descriptive only. Repository evidence remains authoritative.
+True custom clickable controls require an MCP App/Extension UI and must not be claimed from a skill-only rendering path.
