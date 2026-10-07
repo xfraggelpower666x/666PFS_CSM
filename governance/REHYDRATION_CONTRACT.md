@@ -50,3 +50,19 @@ LYVRA_PLUGIN_RELEASE_CHECK_WHEN_RELEVANT=REQUIRED
 LYVRA_APPROVAL_CHECK_BEFORE_PRIVATE_WRITE=REQUIRED
 LYVRA_AUTOLOAD=FORBIDDEN
 LYVRA_MUTATION_BY_PFS_UPDATE=FORBIDDEN
+
+
+## LYVRA Private Repository Authority Gate
+
+Any 666PFS operation whose write target is a LYVRA-owned private repository MUST obtain a fresh, current, exact LYVRA approval before the write.
+The approval must match the target repository/root, operation scope, and exact release/version set being backed up.
+A stale, blanket, mismatched, missing, or already-consumed approval is invalid.
+Without a matching approval, PFS MUST stop at WRITE_BLOCKED and may only preserve/read/update its own metadata about the pending operation.
+PFS has no standing write authority over LYVRA private repositories.
+
+LYVRA_PRIVATE_REPO_WRITE_REQUIRES_FRESH_APPROVAL=TRUE
+LYVRA_PRIVATE_REPO_STANDING_PERMISSION=FALSE
+LYVRA_APPROVAL_SCOPE_MATCH_REQUIRED=TRUE
+LYVRA_APPROVAL_RELEASE_MATCH_REQUIRED=TRUE
+LYVRA_APPROVAL_TARGET_MATCH_REQUIRED=TRUE
+MISSING_OR_MISMATCHED_LYVRA_APPROVAL=WRITE_BLOCKED
