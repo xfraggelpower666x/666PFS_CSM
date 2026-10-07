@@ -28,3 +28,25 @@ A newer valid repository state takes precedence over older Drive history. Histor
 
 
 Child binding rule: an existing child must be verified by functional identity, scope, authority, and source/runtime evidence before reuse. Name or ID similarity alone is never sufficient.
+
+
+## Mandatory LYVRA Freshness Gate for `666PFS UPDATE`
+
+Every direct current-user trigger `666PFS UPDATE` MUST, before finalizing PFS state:
+1. Rehydrate 666PFS from the current PFS repository pointer.
+2. Read the current LYVRA→PFS handoff surfaces when present.
+3. Read LYVRA's current origin-repository HEAD and the current published plugin release evidence relevant to PFS backup-child continuity.
+4. Compare the newest valid LYVRA evidence with PFS-stored LYVRA handoff/backup metadata.
+5. If LYVRA is newer, rebase only PFS metadata/backup targets to the newer verified LYVRA state; never overwrite newer LYVRA state with an older handoff.
+6. Check the current LYVRA approval gate before any private-vault mutation.
+7. If approval is absent, stale, or mismatched, set WRITE_BLOCKED and preserve the exact pending target versions/releases.
+8. Never autoload LYVRA, mutate LYVRA, transfer LYVRA authority, or merge namespaces as part of this gate.
+9. Complete PFS readback/freeze and publish the PFS pointer last.
+
+LYVRA_FRESHNESS_CHECK_ON_EVERY_PFS_UPDATE=REQUIRED
+LYVRA_HANDOFF_CHECK_ON_EVERY_PFS_UPDATE=REQUIRED
+LYVRA_ORIGIN_HEAD_CHECK_ON_EVERY_PFS_UPDATE=REQUIRED
+LYVRA_PLUGIN_RELEASE_CHECK_WHEN_RELEVANT=REQUIRED
+LYVRA_APPROVAL_CHECK_BEFORE_PRIVATE_WRITE=REQUIRED
+LYVRA_AUTOLOAD=FORBIDDEN
+LYVRA_MUTATION_BY_PFS_UPDATE=FORBIDDEN
