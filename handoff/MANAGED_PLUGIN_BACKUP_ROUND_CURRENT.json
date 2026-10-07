@@ -1,0 +1,41 @@
+{
+  "schema": "666PFS_MANAGED_PLUGIN_BACKUP_ROUND_v1",
+  "round_id": "PFS-MANAGED-PLUGIN-ROUND-2026-10-07-R01",
+  "status": "AWAITING_LYVRA_NATIVE_APPROVAL_CLIC_ALREADY_APPROVED",
+  "pfs": {
+    "plugin_id": "plugins_6ac695d745d881919c3ea2766c09e6ee",
+    "version": "0.1.4",
+    "release_id": "pluginrel_6ac6a92d73148191a0e537a559fdcd7a",
+    "immutable_snapshot": "666pfs-plugin/releases/v0.1.4/source",
+    "source_tree_sha": "9ba425c417bcc24fa552abd517be76851a0477e7",
+    "source_parity": "PASS_22_OF_22_EXACT_GIT_BLOB_IDENTITY",
+    "backup_child": "PFSPLUGIN-44001",
+    "backup_status": "VERIFIED_COMPLETE_REPO_SNAPSHOT_22_OF_22"
+  },
+  "lyvra": {
+    "account_version": "0.13.41",
+    "account_release_id": "pluginrel_6ac6a534aa748191b4fff3bd83aa162d",
+    "native_version": "0.1.41",
+    "native_release_id": "pluginrel_6ac6a5263cf88191a58ad3f99884a38b",
+    "runtime_plugin_state_fingerprint": "55c0826a1e433083b5f68ba8db2fe21b62f2773ffcdae6e30c8ebe8a7514cc50",
+    "approval_status": "FRESH_REQUEST_REQUIRED",
+    "private_repository_integration_notice": "REQUIRED",
+    "private_repository_role": "PLUGIN_BACKUP_STORAGE_ONLY"
+  },
+  "clic": {
+    "plugin_id": "plugins_6abfb2e08fdc8191920dcdc4349c69c8",
+    "version": "0.1.16",
+    "release_id": "pluginrel_6ac69f9432e4819194f58caa66a28271",
+    "runtime_plugin_state_fingerprint": "78cfc46edbfbef7288af9ef31866546130a361f0b5345b75009ae931c740ac5e",
+    "native_approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-07-017",
+    "native_approval_status": "APPROVED_FOR_PFS_EXECUTION_PENDING",
+    "revalidate_at_execution": true
+  },
+  "rules": {
+    "pfs_self_approval_of_foreign_legs": false,
+    "lyvra_authorizes_only_lyvra_leg": true,
+    "clic_authorizes_only_clic_leg": true,
+    "fingerprint_or_release_change_breaks_round": true,
+    "foreign_mutation_by_pfs": false
+  }
+}
