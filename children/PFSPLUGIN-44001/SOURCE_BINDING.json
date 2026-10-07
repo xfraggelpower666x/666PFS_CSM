@@ -1,19 +1,19 @@
 {
-  "schema": "666PFS_PLUGIN_BACKUP_CHILD_BINDING_v2",
+  "schema": "666PFS_PLUGIN_BACKUP_CHILD_BINDING_v3",
   "child_id": "PFSPLUGIN-44001",
   "functional_identity": "666PFS_PLUGIN_BACKUP_RECOVERY_RELEASE_PROVENANCE",
   "plugin_id": "plugins_6ac695d745d881919c3ea2766c09e6ee",
   "display_name": "P.F.S. - C.S.M.",
   "technical_name": "pfs-csm-native-runtime",
-  "version": "0.1.4",
-  "release_id": "pluginrel_6ac6a92d73148191a0e537a559fdcd7a",
+  "version": "0.1.7",
+  "release_id": "pluginrel_6ac6c4598dd0819185fb83e3615d03a9",
   "repository": "xfraggelpower666x/666PFS_CSM",
   "branch": "main",
   "current_source_root": "666pfs-plugin/current/source",
-  "immutable_snapshot": "666pfs-plugin/releases/v0.1.4/source",
-  "source_tree_sha": "9ba425c417bcc24fa552abd517be76851a0477e7",
-  "file_count": 22,
-  "source_parity": "PASS_22_OF_22_EXACT_GIT_BLOB_IDENTITY",
+  "immutable_snapshot": "666pfs-plugin/releases/v0.1.7/source",
+  "source_tree_sha": "eaee9a658d772bfa4715c0ed74ec4bb86a9b0829",
+  "file_count": 24,
+  "source_parity": "PASS_24_OF_24_EXACT_GIT_BLOB_IDENTITY",
   "binary_assets": {
     "icon": {
       "path": "assets/pfs-csm-icon.png",
@@ -24,9 +24,10 @@
       "sha256": "7cd5c17ccd5aa20613805cda3415d285752864286af315d6d27438cb3074c528"
     }
   },
-  "backup_mode": "IMMUTABLE_REPO_FULL_SNAPSHOT_FALLBACK",
-  "backup_status": "VERIFIED_COMPLETE_REPO_SNAPSHOT_22_OF_22",
+  "backup_mode": "IMMUTABLE_REPO_FULL_SNAPSHOT",
+  "backup_status": "VERIFIED_COMPLETE_REPO_SNAPSHOT_24_OF_24",
   "packaged_archive_status": "READBACK_PENDING_NONBLOCKING_FOR_REPO_SNAPSHOT",
   "restore_status": "REPO_SNAPSHOT_AVAILABLE",
-  "live_readback": "VERIFIED_V0.1.4_22_FILES"
+  "live_readback": "VERIFIED_V0.1.7_24_FILES",
+  "binary_binding_governance": "ACTIVE_V1"
 }
