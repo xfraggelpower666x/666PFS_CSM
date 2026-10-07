@@ -1,125 +1,32 @@
 {
+  "schema": "666PFS_PLUGIN_BACKUP_CHILD_BINDING_v2",
+  "child_id": "PFSPLUGIN-44001",
+  "functional_identity": "666PFS_PLUGIN_BACKUP_RECOVERY_RELEASE_PROVENANCE",
   "plugin_id": "plugins_6ac695d745d881919c3ea2766c09e6ee",
-  "release_id": "pluginrel_6ac699cffc748191a3f8adb8a8d73a76",
-  "version": "0.1.2",
   "display_name": "P.F.S. - C.S.M.",
   "technical_name": "pfs-csm-native-runtime",
+  "version": "0.1.4",
+  "release_id": "pluginrel_6ac6a92d73148191a0e537a559fdcd7a",
   "repository": "xfraggelpower666x/666PFS_CSM",
   "branch": "main",
-  "files": [
-    {
-      "path": ".app.json",
-      "size": 237,
-      "sha256": "a8c14296c8330dfc9825d42771c0b98e294297b42bf4484be26df1fabcef1321"
-    },
-    {
-      "path": ".codex-plugin/plugin.json",
-      "size": 1072,
-      "sha256": "88ae46cb55357b6e7f2f9377c1cad20421bd075e4c12812575d557fd2b907dd9"
-    },
-    {
+  "current_source_root": "666pfs-plugin/current/source",
+  "immutable_snapshot": "666pfs-plugin/releases/v0.1.4/source",
+  "source_tree_sha": "9ba425c417bcc24fa552abd517be76851a0477e7",
+  "file_count": 22,
+  "source_parity": "PASS_22_OF_22_EXACT_GIT_BLOB_IDENTITY",
+  "binary_assets": {
+    "icon": {
       "path": "assets/pfs-csm-icon.png",
-      "size": 2688926,
       "sha256": "9e49137aca0ae68c1be8e92959bdfd12e37623556fe21618cf1c18b580a79c32"
     },
-    {
+    "logo": {
       "path": "assets/pfs-csm-logo.png",
-      "size": 3104943,
       "sha256": "7cd5c17ccd5aa20613805cda3415d285752864286af315d6d27438cb3074c528"
-    },
-    {
-      "path": "plugin.json",
-      "size": 1221,
-      "sha256": "0ece78421cd56455d85c24fff3b9a6d7a5e9b9d84381d51cf87197712bb05270"
-    },
-    {
-      "path": "references/authority.md",
-      "size": 2706,
-      "sha256": "a3249cfad3ae6d38cc91e7f6371cc64715e0b54fcd653c763363f644d9de598c"
-    },
-    {
-      "path": "references/build-contract.md",
-      "size": 17472,
-      "sha256": "f6c1249460a6b1524da7a764915fe6d6d3e12a0d20014134f8c0378c172c90f7"
-    },
-    {
-      "path": "references/plugin-lifecycle.md",
-      "size": 2186,
-      "sha256": "aa99af2eb24daae7cabb319283c8f3a1010023725c564cc70ddc4caec94da1a7"
-    },
-    {
-      "path": "skills/666pfs-audit/SKILL.md",
-      "size": 1000,
-      "sha256": "ffd2e905a184139abdf4960eb49ce860a17260e7f5f13e84d790f362a488aeb1"
-    },
-    {
-      "path": "skills/666pfs-backup-governance/SKILL.md",
-      "size": 1135,
-      "sha256": "2504db2661f34b054a9fa4e54d4f6075263a743a7196479214c628ed82ea3216"
-    },
-    {
-      "path": "skills/666pfs-child-lifecycle/SKILL.md",
-      "size": 999,
-      "sha256": "33b978526cbfb339ca0c86fdf052948a472f1ec6366cc12214793cc8179fee2f"
-    },
-    {
-      "path": "skills/666pfs-continuity/SKILL.md",
-      "size": 799,
-      "sha256": "9b5838c624913d8a62f61bc446c6998d7cbadce921bd4cffd0856de58e9ab47e"
-    },
-    {
-      "path": "skills/666pfs-csm/SKILL.md",
-      "size": 727,
-      "sha256": "dcaa379b65418124d4e18055c7fdc0b25c5dfc077d00653d3f71db6d252f3a08"
-    },
-    {
-      "path": "skills/666pfs-dashboard/SKILL.md",
-      "size": 938,
-      "sha256": "c9d9952487a22d44ba89bb1b79c006939032f147fc192d96be408f4986266f3f"
-    },
-    {
-      "path": "skills/666pfs-foreign-handoff-intake/SKILL.md",
-      "size": 1368,
-      "sha256": "84426833f4aa09cef109d7e24e6a96d3a3f365591de15990a114b9f94f264b1d"
-    },
-    {
-      "path": "skills/666pfs-lifecircle/SKILL.md",
-      "size": 962,
-      "sha256": "9631bc1df7c6f1e61c3f6b6487cc59d8285b2959d73d0f3f633a0763aa7bbf5b"
-    },
-    {
-      "path": "skills/666pfs-plugin-runtime/SKILL.md",
-      "size": 705,
-      "sha256": "618fda5b2865bcf9c36b60c4354cd83f2dad40829cd11bd9d26bc59f6b288e63"
-    },
-    {
-      "path": "skills/666pfs-scope-map/SKILL.md",
-      "size": 647,
-      "sha256": "5eeaab9822ed1500aa1652bf4da32a4b631be5ee3b716bebc44bd0f4c11caf9a"
-    },
-    {
-      "path": "skills/666pfs-systemstart/SKILL.md",
-      "size": 1287,
-      "sha256": "62135b976d810adcad4106f52a04d2cf038dee0dc63aed119bb1bdc28f8cf95b"
-    },
-    {
-      "path": "skills/666pfs-update/SKILL.md",
-      "size": 1133,
-      "sha256": "7ff1ecf5288f0fed3ab3f60e6ac4338e44c61e191a38a9cd0034657f92c3438b"
     }
-  ],
-  "file_count": 20,
-  "source_fingerprint_sha256": "05f12676100b2ebf47431fe47c1dae68f3c09facc87a8d2f029b63c8068dc3a0",
-  "archive_sha256": "READBACK_PENDING",
-  "archive_size": "READBACK_PENDING",
-  "archive_path": "PENDING_V0.1.2_ARCHIVE_READBACK",
-  "backup_child_id": "PFSPLUGIN-44001",
-  "source_parity": "PASS_20_OF_20_REPO_LIVE_TEXT_AND_UNCHANGED_BINARY_CONTINUITY",
-  "binary_parity": "PASS_2_OF_2_UNCHANGED_FROM_VERIFIED_0.1.1_OVERLAY",
-  "backup_status": "READBACK_PENDING_ARCHIVE_MATERIALIZATION",
-  "runtime_acceptance": "OPEN_FRESH_CHAT_REQUIRED",
-  "backup_receipt": "PENDING_V0.1.2_ARCHIVE_READBACK",
-  "backup_readback_commit": "8dec7b2b89acd2b5358127d37619ff0a9fb08504",
-  "restore_status": "PENDING_V0.1.2_ARCHIVE",
-  "current_source_snapshot": "666pfs-plugin/releases/v0.1.2/source"
+  },
+  "backup_mode": "IMMUTABLE_REPO_FULL_SNAPSHOT_FALLBACK",
+  "backup_status": "VERIFIED_COMPLETE_REPO_SNAPSHOT_22_OF_22",
+  "packaged_archive_status": "READBACK_PENDING_NONBLOCKING_FOR_REPO_SNAPSHOT",
+  "restore_status": "REPO_SNAPSHOT_AVAILABLE",
+  "live_readback": "VERIFIED_V0.1.4_22_FILES"
 }
