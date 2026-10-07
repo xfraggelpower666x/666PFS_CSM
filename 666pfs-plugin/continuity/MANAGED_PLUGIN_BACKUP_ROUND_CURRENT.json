@@ -1,0 +1,37 @@
+{
+  "round_id": "PFS-MANAGED-20261007-PFS011-01",
+  "status": "PFS_OWN_LEG_VERIFIED_FOREIGN_LEGS_BLOCKED",
+  "pfs_own_evolution": "COMPLETE_V0.1.1",
+  "pfs": {
+    "plugin_id": "plugins_6ac695d745d881919c3ea2766c09e6ee",
+    "version": "0.1.1",
+    "release_id": "pluginrel_6ac696de351c8191a7822429918409b1",
+    "source_and_binary_parity": "PASS",
+    "archive_sha256": "ad6543bddbfaa18a2ef68b92721a0bad2d9d4479f5868617f250403c82879f83",
+    "archive_size": 5803991,
+    "receipt": "666pfs-plugin/recovery/BACKUP_RECEIPTS/v0.1.1-2026-10-07.json"
+  },
+  "lyvra": {
+    "authority_repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+    "authority_branch": "lyvra",
+    "authority_head_observed": "9745e92d8672918495f13e306bd8d1efcf3cf87c",
+    "account_live_version": "0.13.37",
+    "account_live_release": "pluginrel_6ac694bfead081918426d933fb788358",
+    "native_live_version": "0.1.37",
+    "native_live_release": "pluginrel_6ac6939b312481918f4677642cb6e9e6",
+    "handoff_account_version": "0.13.36",
+    "status": "WRITE_BLOCKED_LIVE_RELEASE_NATIVE_BINDING_MISMATCH",
+    "fresh_native_approval_required": true
+  },
+  "clic": {
+    "authority_repo": "xfraggelpower666x/666CLICPRO",
+    "authority_branch": "clic-migration-rev79-staging",
+    "authority_head_observed": "6384068975c96b3e80a18d2d2d57996143e8948b",
+    "version": "0.1.11",
+    "release": "pluginrel_6ac68de349a88191996787ed7da86b10",
+    "status": "BLOCKED_CONFIRMED_BINARY_SIZE_MISMATCH_NATIVE_APPROVAL_NOT_EXECUTABLE"
+  },
+  "foreign_writes": "NONE",
+  "foreign_native_consumption": "PENDING",
+  "new_change_after_freeze_requires_new_round": true
+}

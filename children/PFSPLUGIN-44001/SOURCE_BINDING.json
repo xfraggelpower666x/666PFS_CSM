@@ -114,8 +114,11 @@
   "archive_size": 5803991,
   "archive_path": "666pfs-plugin/recovery/pfs-csm-native-runtime-v0.1.1-live.tar.gz",
   "backup_child_id": "PFSPLUGIN-44001",
-  "source_parity": "READBACK_PENDING",
-  "binary_parity": "READBACK_PENDING",
-  "backup_status": "READBACK_PENDING",
-  "runtime_acceptance": "OPEN_FRESH_CHAT_REQUIRED"
+  "source_parity": "PASS_20_OF_20",
+  "binary_parity": "PASS_2_OF_2",
+  "backup_status": "PASS",
+  "runtime_acceptance": "OPEN_FRESH_CHAT_REQUIRED",
+  "backup_receipt": "666pfs-plugin/recovery/BACKUP_RECEIPTS/v0.1.1-2026-10-07.json",
+  "backup_readback_commit": "8dec7b2b89acd2b5358127d37619ff0a9fb08504",
+  "restore_status": "PASS_ISOLATED_BYTE_COMPARISON"
 }

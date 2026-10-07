@@ -1,0 +1,17 @@
+{
+  "verified_repo_head": "8dec7b2b89acd2b5358127d37619ff0a9fb08504",
+  "plugin_id": "plugins_6ac695d745d881919c3ea2766c09e6ee",
+  "version": "0.1.1",
+  "release_id": "pluginrel_6ac696de351c8191a7822429918409b1",
+  "file_count": 20,
+  "source_parity": "PASS_20_OF_20_CURRENT_AND_IMMUTABLE",
+  "binary_parity": "PASS_2_OF_2_ACTUAL_BYTES",
+  "archive_sha256": "ad6543bddbfaa18a2ef68b92721a0bad2d9d4479f5868617f250403c82879f83",
+  "archive_size": 5803991,
+  "archive_entries": 20,
+  "archive_readback": "PASS",
+  "isolated_restore_byte_comparison": "PASS_ALL_20_FILES",
+  "child_registration_readback": "PASS",
+  "runtime_acceptance": "OPEN_FRESH_CHAT_REQUIRED",
+  "v0_1_0_metadata_parity": "PARTIAL_PUBLISHER_EMAIL_OMITTED_PUBLIC_RECOVERY"
+}
