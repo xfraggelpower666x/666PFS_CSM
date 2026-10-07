@@ -16,3 +16,11 @@ Recent handoffs, supersession, unfinished obligations, recent recovery anchors.
 
 ## Deep Historical Past
 Superseded states, retired identities, historical backups and recovery provenance.
+
+
+## Semantic visual-learning temporal state
+PRESENT_CURRENT_VISUAL_STATE=LATEST_VERIFIED_LOCAL_SEMANTIC_VISUAL_CONTRACT_AND_OUTCOME
+NEAR_ACTIVE_PAST_VISUAL_STATE=RECENT_CANDIDATES_CONTRADICTIONS_AND_PEER_NOTICES
+DEEP_HISTORICAL_VISUAL_STATE=SUPERSEDED_VISUAL_RULES_WITH_PROVENANCE
+STALE_VISUAL_LEARNING_REQUIRES_REVALIDATION=TRUE
+LEARNED_NE_PERMANENT=TRUE
