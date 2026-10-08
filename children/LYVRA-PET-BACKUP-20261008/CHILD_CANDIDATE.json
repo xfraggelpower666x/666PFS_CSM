@@ -1,0 +1,26 @@
+{
+  "schema": "PFS_CHILD_BACKUP_CANDIDATE_V1",
+  "child_id": "PFS-CHILD-LYVRA-PET-BACKUP-20261008",
+  "title": "LYVRA PET — Backup Recovery",
+  "status": "CANDIDATE_SOURCE_SNAPSHOT_READBACK_PASS_NATIVE_REGISTRY_PENDING",
+  "role": "BACKUP_RECOVERY_ONLY",
+  "native_parent": "666PFS-CORE-001",
+  "native_owner": "WHOLE_LYVRA",
+  "source_repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+  "source_branch": "lyvra-pet-free-auth-budget-20261008",
+  "source_backup_ref": "backup/lyvra-pet-approved-staging-20261008",
+  "source_manifest": "LYVRA_PET/backups/2026-10-08/APPROVED_STAGING_SNAPSHOT.json",
+  "source_handoff": "LYVRA_PET/backups/2026-10-08/OUTBOUND_TO_666PFS_NEW_CHILD.md",
+  "source_file_count": 6,
+  "production_live": false,
+  "free_only": true,
+  "backup_payload": "GITHUB_IMMUTABLE_REFERENCE_AND_CHECKSUMS_ONLY",
+  "restore_rule": "Read owner current and frozen manifest, verify all blobs, quarantine restore, owner approval before deployment",
+  "pending": [
+    "Verify complete six-file blob list from PFS native reader",
+    "PFS child inventory registration",
+    "PFS dashboard card and rehydration integration",
+    "Core Current Pointer last",
+    "Binary ZIP archive if required"
+  ]
+}
