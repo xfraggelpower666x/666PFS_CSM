@@ -1,0 +1,24 @@
+{
+  "schema": "PFS_CHILD_BACKUP_CANDIDATE_V1",
+  "child_id": "PFS-CHILD-LYVRA-PET-BACKUP-20261008",
+  "title": "LYVRA PET — Backup Recovery",
+  "status": "REGISTERED_BACKUP_ONLY_PENDING_FULL_MIRROR",
+  "role": "BACKUP_RECOVERY_ONLY",
+  "native_parent": "666PFS-CORE-001",
+  "native_owner": "WHOLE_LYVRA",
+  "source_repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+  "source_branch": "lyvra-pet-free-auth-budget-20261008",
+  "source_backup_ref": "backup/lyvra-pet-approved-staging-20261008",
+  "source_manifest": "LYVRA_PET/backups/2026-10-08/APPROVED_STAGING_SNAPSHOT.json",
+  "source_handoff": "LYVRA_PET/backups/2026-10-08/OUTBOUND_TO_666PFS_NEW_CHILD.md",
+  "source_file_count": 6,
+  "production_live": false,
+  "free_only": true,
+  "backup_payload": "VERIFIED_EXTERNAL_GIT_SNAPSHOT_REFERENCE_NOT_FULL_BINARY_MIRROR",
+  "restore_rule": "Read owner current and frozen manifest, verify all blobs, quarantine restore, owner approval before deployment",
+  "pending": [
+    "Full byte-for-byte binary mirror in PFS child",
+    "Add child to active inventory after complete mirror",
+    "End-to-end recovery trial"
+  ]
+}
