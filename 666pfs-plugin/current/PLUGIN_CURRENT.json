@@ -4,7 +4,7 @@
   "display_name": "P.F.S. - C.S.M.",
   "technical_name": "pfs-csm-native-runtime",
   "version": "0.1.7",
-  "release_id": "pluginrel_6ac6c4598dd0819185fb83e3615d03a9",
+  "release_id": "pluginrel_6ac6f50503888191941c952862fb4d6d",
   "repository": "xfraggelpower666x/666PFS_CSM",
   "branch": "main",
   "source_root": "666pfs-plugin/current/source",
@@ -26,17 +26,28 @@
   },
   "live_readback": {
     "version": "0.1.7",
-    "release_id": "pluginrel_6ac6c4598dd0819185fb83e3615d03a9",
+    "release_id": "pluginrel_6ac6f50503888191941c952862fb4d6d",
     "scope": "USER",
     "discoverability": "PRIVATE",
-    "source_files": "VERIFIED_24_PRESENT"
+    "source_files": "VERIFIED_24_PRESENT",
+    "text_parity": "PARTIAL_DIRECT_CHECK_NO_MISMATCH_OBSERVED_IN_CRITICAL_FILES",
+    "binary_parity": "READBACK_PENDING_EXACT_RELEASE_ARCHIVE_NOT_MATERIALIZED"
   },
   "backup_mode": "IMMUTABLE_REPO_FULL_SNAPSHOT",
-  "backup_status": "VERIFIED_COMPLETE_REPO_SNAPSHOT_24_OF_24",
-  "packaged_plugin_archive_status": "READBACK_PENDING_NONBLOCKING_FOR_REPO_SNAPSHOT",
+  "backup_status": "REPO_SNAPSHOT_VERIFIED_LIVE_RELEASE_BINDING_REFRESH_PENDING_EXACT_BINARY_READBACK",
+  "packaged_plugin_archive_status": "READBACK_PENDING_CURRENT_RELEASE_0.1.7_PLUGINREL_6AC6F505",
   "backup_child_id": "PFSPLUGIN-44001",
   "backup_child_functional_identity": "666PFS_PLUGIN_BACKUP_RECOVERY_RELEASE_PROVENANCE",
-  "plugin_impact_status": "PLUGIN_UPDATE_COMPLETED_REPO_BACKUP_VERIFIED",
+  "plugin_impact_status": "PLUGIN_PARITY_REPAIR_REQUIRED_RELEASE_ID_DRIFT_BINARY_READBACK_PENDING",
   "skill_count": 14,
-  "binary_binding_governance": "ACTIVE_V1"
+  "binary_binding_governance": "ACTIVE_V1",
+  "release_metadata_reconcile_2026_10_09": {
+    "previous_release_id": "pluginrel_6ac6c4598dd0819185fb83e3615d03a9",
+    "current_live_release_id": "pluginrel_6ac6f50503888191941c952862fb4d6d",
+    "version_unchanged": true,
+    "live_file_count": 24,
+    "repository_source_file_count": 24,
+    "exact_binary_parity_verified": false,
+    "reason": "Current release archive download was exposed by Plugin Creator but could not be materialized through available transport in this update; do not infer binary parity."
+  }
 }
