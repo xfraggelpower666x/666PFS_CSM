@@ -1,16 +1,17 @@
 {
   "schema": "PFS_MANAGED_PLUGIN_BACKUP_ROUND_CURRENT_vNext",
   "date": "2026-10-09",
-  "status": "NO_STABLE_ROUND_FROZEN_PFS_RELEASE_BINDING_READBACK_PENDING",
+  "status": "NO_STABLE_ROUND_FROZEN_MULTIPLE_CURRENT_RELEASES_SUPERSEDED",
   "trigger": "666PFS UPDATE",
   "pfs": {
     "plugin_id": "plugins_6ac695d745d881919c3ea2766c09e6ee",
     "version": "0.1.7",
     "live_release_id": "pluginrel_6ac6f50503888191941c952862fb4d6d",
-    "repo_previous_release_id": "pluginrel_6ac6c4598dd0819185fb83e3615d03a9",
     "live_file_count": 24,
     "repository_source_file_count": 24,
-    "release_id_drift": "VERIFIED",
+    "exact_current_release_archive_exposed": true,
+    "exact_current_release_archive_materialized": false,
+    "archive_transport_attempt": "FAILED_CONTAINER_DNS_AND_WEB_CACHE_MISS",
     "exact_current_release_binary_parity": "READBACK_PENDING",
     "backup_execution": "DEFERRED_UNTIL_EXACT_RELEASE_BINARY_READBACK"
   },
@@ -18,17 +19,40 @@
     "authority_repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
     "authority_branch": "lyvra",
     "authority_head_observed": "55f157948da4907c1666dde05f9c5888a44ac6bf",
+    "account_version": "0.13.47",
+    "account_release_id": "pluginrel_6ac74b1f99ac8191a4c800e9180c2e9b",
+    "native_version": "0.1.50",
+    "native_release_id": "pluginrel_6ac74b0b5c88819192dca918ea3860a4",
+    "runtime_plugin_state_fingerprint": "13f7acd3cecc2e6398300525fc4c1b4859df9014bb7d8fcb769ee71a4ff39bea",
+    "approval_status": "HISTORICAL_APPROVAL_SUPERSEDED_CURRENT_BACKUP_BLOCKED",
+    "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-08-045",
+    "fresh_native_approval_required": true,
     "mutation_by_pfs": "NONE"
   },
   "clic": {
     "authority_repo": "xfraggelpower666x/666CLICPRO",
     "authority_branch": "clic-migration-rev79-staging",
-    "authority_head_observed": "0a83511cd4b96f63d3c8b7cc51ab0b5ec4492200",
+    "authority_head_observed": "835b17d27bb140d44a38bbc90fbefc9c03f3f170",
+    "current_version": "0.1.22",
+    "current_release_id": "pluginrel_6ac6f4e703288191b8757f336d33e186",
+    "live_readback": "VERIFIED_CURRENT_RELEASE_METADATA_AND_27_OF_27_TEXT_FILE_CONTENT_PARITY",
+    "current_approval_status": "SUPERSEDED_BY_V0_1_22_SNAPSHOT_APPROVAL_PENDING_LIVE_REVALIDATION",
+    "prior_approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-08-023",
+    "fresh_native_approval_required": true,
+    "binary_readback": "PENDING",
     "mutation_by_pfs": "NONE"
+  },
+  "stable_set": {
+    "converged": false,
+    "reasons": [
+      "PFS_EXACT_CURRENT_RELEASE_BINARY_PARITY_READBACK_PENDING",
+      "LYVRA_RELEASES_AND_RUNTIME_FINGERPRINT_CHANGED_AFTER_PRIOR_APPROVAL",
+      "CLIC_CURRENT_RELEASE_ADVANCED_TO_0.1.22_AND_PRIOR_APPROVAL_SUPERSEDED"
+    ]
   },
   "coordinated_notice": "NOT_SENT_NO_STABLE_SET",
   "foreign_backup_write": "NONE",
   "foreign_native_approval_consumption": "NONE",
   "new_change_after_freeze_requires_new_round": true,
-  "return_anchor": "PFS_PLUGIN_EXACT_RELEASE_BINARY_READBACK_THEN_STABLE_SET_REVALIDATION"
+  "return_anchor": "REVALIDATE_PFS_EXACT_RELEASE_BINARY_THEN_FREEZE_NEW_STABLE_SET_AND_REQUEST_FRESH_LYVRA_CLIC_APPROVALS"
 }
