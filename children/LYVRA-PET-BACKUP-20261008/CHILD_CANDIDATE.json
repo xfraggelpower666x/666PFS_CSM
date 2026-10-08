@@ -2,7 +2,7 @@
   "schema": "PFS_CHILD_BACKUP_CANDIDATE_V1",
   "child_id": "PFS-CHILD-LYVRA-PET-BACKUP-20261008",
   "title": "LYVRA PET — Backup Recovery",
-  "status": "REGISTERED_BACKUP_ONLY_PENDING_FULL_MIRROR",
+  "status": "MIRRORED_6_OF_6_BLOB_IDENTICAL_CANDIDATE",
   "role": "BACKUP_RECOVERY_ONLY",
   "native_parent": "666PFS-CORE-001",
   "native_owner": "WHOLE_LYVRA",
@@ -14,11 +14,13 @@
   "source_file_count": 6,
   "production_live": false,
   "free_only": true,
-  "backup_payload": "VERIFIED_EXTERNAL_GIT_SNAPSHOT_REFERENCE_NOT_FULL_BINARY_MIRROR",
+  "backup_payload": "INDEPENDENT_PFS_REPO_SOURCE_MIRROR_6_OF_6_BLOB_IDENTICAL",
   "restore_rule": "Read owner current and frozen manifest, verify all blobs, quarantine restore, owner approval before deployment",
   "pending": [
-    "Full byte-for-byte binary mirror in PFS child",
-    "Add child to active inventory after complete mirror",
-    "End-to-end recovery trial"
-  ]
+    "End-to-end restore trial",
+    "Full PET project archive beyond six-file worker bundle"
+  ],
+  "mirror_ref": "backup/pfs-lyvra-pet-mirror-20261008-6of6",
+  "mirror_root": "children/LYVRA-PET-BACKUP-20261008/recovery/source/",
+  "integrity_readback": "PASS_6_OF_6"
 }
