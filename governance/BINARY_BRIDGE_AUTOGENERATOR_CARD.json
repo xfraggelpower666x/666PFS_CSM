@@ -43,5 +43,28 @@
   "proven_reference": "CYBERINTROHQ-39001",
   "direct_full_zip_priority": true,
   "direct_full_zip_behavior": "MIRROR_DIRECTLY_AND_DO_NOT_CREATE_BRIDGE",
-  "bridge_is_fallback_only": true
+  "bridge_is_fallback_only": true,
+  "transport_selection_2026_10_17": {
+    "status": "SOURCE_CONTRACT_INTEGRATED_EXECUTION_UNTESTED",
+    "priority": [
+      "DIRECT_VERIFIED_BIN_GITHUB_IF_SUPPORTED",
+      "EXISTING_BRIDGEGEN_LOCAL_PACKAGE_IF_SOURCE_BYTES_VERIFIED",
+      "SAFE_HOLD"
+    ],
+    "stream_reference": {
+      "repository": "xfraggelpower666x/WebRadio-666SOUNDsDESIGn",
+      "branch": "WebRadio-666SOUNDsDESIGn",
+      "path": "radio-codeforge/bridge/MASTER_BRIDGE_REFERENCE_v1.0.0.md",
+      "blob": "3def06e8440bd3816fe00cc23f0c6c8e8319271f",
+      "historical_isolated_test_bytes": 582,
+      "full_original_archive_tested": false
+    },
+    "auto_detect_not_auto_authorize": true,
+    "source_bytes_required": true,
+    "concurrency_recheck": true,
+    "independent_remote_hash_size_required": true,
+    "plugin_creator_binary_endpoint_verified": false,
+    "create_new_bridge_per_task": false,
+    "foreign_runtime_mutation": false
+  }
 }
