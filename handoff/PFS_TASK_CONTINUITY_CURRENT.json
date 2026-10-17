@@ -1,0 +1,62 @@
+{
+  "schema": "PFS_NATIVE_TASK_CONTINUITY_V1",
+  "system_id": "666PFS-CORE-001",
+  "authority": "GITHUB_CURRENT",
+  "status": "ACTIVE_WITH_BLOCKED_RELEASE_GATE",
+  "source_head_before_change": "679b220d9d0750879c237d5d84daef00737029ea",
+  "prechange_recovery_branch": "backup/pre-continuity-taskstack-20261017",
+  "current_work": "PFS_NATIVE_CONTINUITY_INTEGRATION",
+  "task_stack": [
+    {
+      "task_id": "PFS_CHILD_POLICY_PLUGIN_RELEASE",
+      "state": "INTERRUPTED_RETAINED",
+      "last_verified_phase": "THREE_SOURCE_SKILLS_READBACK",
+      "return_anchor": "PFS_PUBLISH_CHILD_POLICY_PLUGIN_RELEASE_AND_VERIFY_HOST",
+      "next_meaningful_step": "PRODUCE_HOST_UPLOADED_PLUGIN_ARCHIVE_AND_PUBLISH_THEN_RELEASE_BINARY_READBACK",
+      "blockers": [
+        "PLUGIN_ARCHIVE_HOST_UPLOAD_NOT_AVAILABLE",
+        "EXACT_BINARY_PARITY_NOT_VERIFIED",
+        "FRESH_HOST_ACCEPTANCE_NOT_TESTED"
+      ]
+    },
+    {
+      "task_id": "PFS_NATIVE_CONTINUITY_INTEGRATION",
+      "state": "IN_PROGRESS",
+      "last_verified_phase": "PRECHANGE_BRANCH_CREATED",
+      "return_anchor": "PFS_CONTINUITY_READBACK_THEN_RETURN_TO_PLUGIN_RELEASE",
+      "next_meaningful_step": "WRITE_AND_VERIFY_CONTINUITY_GOVERNANCE"
+    }
+  ],
+  "interruptions": [
+    {
+      "task_id": "PFS_CHILD_POLICY_PLUGIN_RELEASE",
+      "cause": "USER_NEW_INFORMATION_CONTINUITY_REQUIREMENT",
+      "action": "ABSORB_RELEVANT_INFORMATION_AND_RESUME",
+      "cancellation": false
+    }
+  ],
+  "obligations": [
+    "CONCURRENCY_CHECK",
+    "SOURCE_READBACK",
+    "PLUGIN_RELEASE_PARITY",
+    "FRESH_HOST_TEST_INDEPENDENT"
+  ],
+  "lineage": {
+    "scope": "PFS_ONLY",
+    "chat_lineage_id": null,
+    "global_latest_handoff_forbidden": true,
+    "new_next_chat_requires_fresh_current": true
+  },
+  "gates": {
+    "selected_child": "NONE",
+    "foreign_mutation": false,
+    "automatic_adoption": false,
+    "host_verified": false
+  },
+  "rules": {
+    "return_anchor_before_new_information": true,
+    "resume_previous_work_after_processing": true,
+    "explicit_user_stop_or_new_direct_priority_overrides_auto_resume": true,
+    "pending_authority_lock_or_conflict_blocks_writes": true
+  }
+}
