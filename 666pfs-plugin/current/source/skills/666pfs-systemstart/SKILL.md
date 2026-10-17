@@ -41,3 +41,6 @@ SELECTED_CHILD=NONE unless direct current user context selects a child.
 ---
 
 Read [plugin lifecycle](../../references/plugin-lifecycle.md) for native plugin-current inspection, impact, parity and backup requirements.
+
+## Visual end-of-start navigation
+After evidence-first boot, follow governance/PFS_NATIVE_VISUAL_CONTINUATION_CONTRACT_V1.md: offer actual host-supported next actions for verified open task, dashboard and permitted native audit; never silently end with no choices. Never autoload children.
