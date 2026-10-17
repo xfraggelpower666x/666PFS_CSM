@@ -22,3 +22,6 @@ Functional identity outranks name-only match.
 Ambiguous identity => HOLD_AND_AUDIT.
 External authority remains external.
 Foreground selection is causal/task scoped only.
+
+## Storage classification index (non-authoritative)
+Include CLASSIFICATION, LIVE_OWNER, PFS_ROLE, STORAGE_MODE, SOURCE_CURRENT and RESTORE_STATUS according to governance/CHILD_AUTHORITY_STORAGE_POLICY_V1.md. Resolve only after functional identity and native authority evidence. UNKNOWN => HOLD; mapping never grants a write or autoload.
