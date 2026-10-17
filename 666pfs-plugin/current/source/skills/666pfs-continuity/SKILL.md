@@ -42,3 +42,6 @@ For every interruption: preserve active task, scoped task stack, verified phase,
 
 ## Persistent task carrier
 On every continuation resolve governance/PFS_TASK_CONTINUITY_CONTRACT.md and handoff/PFS_TASK_CONTINUITY_CURRENT.json from verified latest PFS Current. Use scoped task stack and currentness; process causal additions then resume prior task from last verified return anchor. No automatic resumed write through an unresolved blocker. NEW/NEXT CHAT requires lineage-verified handoff and independent fresh-host acceptance.
+
+## Visual continuation output
+After resumed work, show evidence-based outcome, open obligations, exact return anchor and working host-supported contextual choices; if no clickable actions are available, print exact copyable PFS commands. Resolve governance/PFS_NATIVE_VISUAL_CONTINUATION_CONTRACT_V1.md. This does not grant write permission.
