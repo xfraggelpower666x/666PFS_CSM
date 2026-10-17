@@ -15,3 +15,6 @@ Rules:
 - child autoload is forbidden
 - historical sources never become current automatically
 - missing evidence produces HOLD instead of guessed state
+
+## Child classification and precedence
+Resolve child classification before UPDATE or NEW CHILD using governance/CHILD_AUTHORITY_STORAGE_POLICY_V1.md. Live origin Repo or Drive is first, first-party origin backups second, PFS backup third. The registry cannot infer live ownership from a ZIP or automatically convert existing children.
