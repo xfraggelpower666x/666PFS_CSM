@@ -157,3 +157,6 @@ PEER_PROPOSAL_NE_LOCAL_ADOPTION=TRUE
 
 ## Child Authority & Storage Policy V1.0
 Read governance/CHILD_AUTHORITY_STORAGE_POLICY_V1.md before resolving any NEW CHILD, Child selection, or child-changing UPDATE. Verify EXTERNAL_BACKUP_CHILD, PFS_LOCAL_LIVE_CHILD or SYSTEM_ARTIFACT_CHILD from functional identity and native owner. No bulk reclassification and no child autoload. Archived ZIP does not imply live runtime. Existing live owner retains authority.
+
+## PFS persistent task continuity
+Read governance/PFS_TASK_CONTINUITY_CONTRACT.md and handoff/PFS_TASK_CONTINUITY_CURRENT.json after the latest pointer on SYSTEMSTART, UPDATE, WEITER or native NEW/NEXT CHAT. Verify currentness, lineage and open blockers before resuming an interrupted scoped task. Do not infer adoption, host execution or permissions from a persisted task.
