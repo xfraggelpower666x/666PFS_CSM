@@ -19,3 +19,6 @@ Hard guards:
 Preferred composition: heading, evidence status, native table/sections, measured progress if available, blocker/readback note, next valid actions.
 
 True custom clickable controls require an MCP App/Extension UI and must not be claimed from a skill-only rendering path.
+
+## Mandatory contextual completion
+Resolve governance/PFS_NATIVE_VISUAL_CONTINUATION_CONTRACT_V1.md on every relevant PFS system answer. Always show evidence/current state, blockers, exact return anchor and valid usable choices at the end. Prefer host-supported interactive controls; plain actionable commands otherwise. Presentation remains non-authoritative.
