@@ -21,3 +21,6 @@ At UPDATE and NEW CHILD, coordinate evidence-first EXTERNAL_BACKUP_CHILD / PFS_L
 
 ## Causal learning coordination
 Coordinate the native MAX_3_IDENTICAL_CHECKS_THEN_LEARNING_BY_DOING rule via governance/PFS_LEARNING_BY_DOING_CONTRACT.md. Deduplicate retries by failure signature and task, preserve blockers and return anchors. CSM cannot unlock permissions or invent external Bridge capabilities.
+
+## Visual coordination duty
+For PFS-visible CSM results follow governance/PFS_NATIVE_VISUAL_CONTINUATION_CONTRACT_V1.md: always offer valid evidence-bound continuation choices using available host controls or exact copyable commands. CSM remains internal service; visuals grant no routing, mutation, foreign or child execution authority.
