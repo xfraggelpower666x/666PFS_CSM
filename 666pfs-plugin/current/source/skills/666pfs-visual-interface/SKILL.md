@@ -34,3 +34,6 @@ Never expose secrets, tokens, private recovery payloads or signed material.
 
 ## Mandatory evidence-linked closing navigation
 Read governance/PFS_NATIVE_VISUAL_CONTINUATION_CONTRACT_V1.md from verified latest Current. Every relevant PFS native reply ends with a usable context-specific choice surface: resume exact verified task, safe audit/repair, or dashboard as valid. Use actual supported host-native actions; otherwise copyable exact PFS-prefixed commands. Never omit choices when valid options exist, never render fake buttons, and never promise an extension that is not running.
+
+## Five-slot Visual Completion Guard
+Use the existing governance/PFS_NATIVE_VISUAL_CONTINUATION_CONTRACT_V1.md five-slot navigation and guard. Before finishing, verify identity/status, evidence, open blockers, exact return anchor and at least one real valid continuation choice or explicit reason none is valid. Slots: continue; edit/develop; audit/status; dashboard; NEW/NEXT CHAT continuity when verified. Omit unavailable options, never fake buttons, never invent triggers. This is a check inside existing visual presentation, not another visual engine. Host Fresh-Test must remain independent.
