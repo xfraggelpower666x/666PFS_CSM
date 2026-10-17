@@ -23,3 +23,6 @@ The child menu is a visual operational overview, not a flat text list.
 666PFS -> 666CSM -> registries -> child cards -> explicitly selected child
 
 Selection does not imply autoload. Child autoload remains forbidden.
+
+## Visual authority class
+Show EXTERNAL_BACKUP_CHILD / PFS_LOCAL_LIVE_CHILD / SYSTEM_ARTIFACT_CHILD only when verified. Always display first actual canonical Repo-or-Drive origin LIVE authority, then native-system Repo/Drive backup, then PFS backup; mark unverified links HOLD. Do not render backup as live.
