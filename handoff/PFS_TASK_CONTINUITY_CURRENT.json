@@ -2,29 +2,28 @@
   "schema": "PFS_NATIVE_TASK_CONTINUITY_V1",
   "system_id": "666PFS-CORE-001",
   "authority": "GITHUB_CURRENT",
-  "status": "ACTIVE_WITH_BLOCKED_RELEASE_GATE",
+  "status": "PLUGIN_0_1_9_RELEASE_VERIFIED_BINARY_HOST_OPEN",
   "source_head_before_change": "679b220d9d0750879c237d5d84daef00737029ea",
   "prechange_recovery_branch": "backup/pre-continuity-taskstack-20261017",
-  "current_work": "PFS_NATIVE_CONTINUITY_INTEGRATION",
+  "current_work": "PFS_PLUGIN_0_1_9_BINARY_PARITY_AND_FRESH_HOST",
   "task_stack": [
     {
       "task_id": "PFS_CHILD_POLICY_PLUGIN_RELEASE",
-      "state": "INTERRUPTED_RETAINED",
-      "last_verified_phase": "THREE_SOURCE_SKILLS_READBACK",
-      "return_anchor": "PFS_PUBLISH_CHILD_POLICY_PLUGIN_RELEASE_AND_VERIFY_HOST",
-      "next_meaningful_step": "PRODUCE_HOST_UPLOADED_PLUGIN_ARCHIVE_AND_PUBLISH_THEN_RELEASE_BINARY_READBACK",
+      "state": "RESUMED_RELEASE_PUBLISHED_ACCEPTANCE_PENDING",
+      "last_verified_phase": "PLUGIN_V0_1_9_RELEASE_AND_TWO_SKILL_READBACK",
+      "return_anchor": "PFS_PLUGIN_0_1_9_BINARY_PARITY_AND_FRESH_HOST",
+      "next_meaningful_step": "OBTAIN_INDEPENDENT_RELEASE_BYTES_VIA_NEW_AUTHORIZED_TRANSPORT_AND_FRESH_HOST_TEST",
       "blockers": [
-        "PLUGIN_ARCHIVE_HOST_UPLOAD_NOT_AVAILABLE",
-        "EXACT_BINARY_PARITY_NOT_VERIFIED",
+        "EXACT_ARCHIVE_AND_PNG_BINARY_PARITY_PENDING",
         "FRESH_HOST_ACCEPTANCE_NOT_TESTED"
       ]
     },
     {
       "task_id": "PFS_NATIVE_CONTINUITY_INTEGRATION",
-      "state": "IN_PROGRESS",
-      "last_verified_phase": "PRECHANGE_BRANCH_CREATED",
+      "state": "REPO_NATIVE_COMPLETED",
+      "last_verified_phase": "NATIVE_CONTINUITY_CONTRACT_POINTER_LAST_READBACK",
       "return_anchor": "PFS_CONTINUITY_READBACK_THEN_RETURN_TO_PLUGIN_RELEASE",
-      "next_meaningful_step": "WRITE_AND_VERIFY_CONTINUITY_GOVERNANCE"
+      "next_meaningful_step": "NONE_COMPLETED"
     }
   ],
   "interruptions": [
@@ -58,5 +57,15 @@
     "resume_previous_work_after_processing": true,
     "explicit_user_stop_or_new_direct_priority_overrides_auto_resume": true,
     "pending_authority_lock_or_conflict_blocks_writes": true
-  }
+  },
+  "current_verified_release": {
+    "version": "0.1.9",
+    "release_id": "pluginrel_6ad2d47ceaa48191abd6f653979b468e",
+    "evidence_freeze": "history/666PFS_PLUGIN_V019_RELEASE_READBACK_FREEZE_2026-10-17.md",
+    "release_publication": true,
+    "binary_parity": false,
+    "fresh_host_acceptance": false
+  },
+  "reconciled_from_pointer_head": "f8f624dbde23a41fe2dd03f40a08357e10db5512",
+  "reconciled_from_pointer_blob": "f89585e4dd8e82469dc8eba517e97d3049760d02"
 }
