@@ -42,3 +42,6 @@ Retired identities must not be resurrected.
 External native systems may be referenced without authority transfer.
 
 ---
+
+## Policy V1.0 — classification at UPDATE / NEW CHILD
+Resolve governance/CHILD_AUTHORITY_STORAGE_POLICY_V1.md from verified current. Before child registration or update classify functional identity and canonical owner: EXTERNAL_BACKUP_CHILD (origin Repo/Drive live; PFS backup only), PFS_LOCAL_LIVE_CHILD (PFS-owned runtime), SYSTEM_ARTIFACT_CHILD (PFS-owned verified package). Ordering: origin live current > origin-native repo/Drive backup > PFS backup. Unknown owner => HOLD. Do not bulk-reclassify, autoload, deploy or infer live state from ZIP. New children require an explicit user-directed child creation scope; no automatic authority transfer.
