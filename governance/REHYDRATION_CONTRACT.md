@@ -154,3 +154,6 @@ PEER_VISUAL_DEVELOPMENT_NOTICE_INTAKE=READ_ONLY
 SHARED_SEMANTICS_NE_SHARED_MEMORY=TRUE
 LEARNING_NE_WRITE_AUTHORITY=TRUE
 PEER_PROPOSAL_NE_LOCAL_ADOPTION=TRUE
+
+## Child Authority & Storage Policy V1.0
+Read governance/CHILD_AUTHORITY_STORAGE_POLICY_V1.md before resolving any NEW CHILD, Child selection, or child-changing UPDATE. Verify EXTERNAL_BACKUP_CHILD, PFS_LOCAL_LIVE_CHILD or SYSTEM_ARTIFACT_CHILD from functional identity and native owner. No bulk reclassification and no child autoload. Archived ZIP does not imply live runtime. Existing live owner retains authority.
