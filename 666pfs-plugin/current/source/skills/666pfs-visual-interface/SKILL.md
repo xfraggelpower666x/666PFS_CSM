@@ -31,3 +31,6 @@ After a state view, offer only actions that are currently valid under native aut
 A Visual Standstill view means an intentional stable checkpoint only. Show reason, last verified checkpoint, lock/write state, unresolved obligations and exact return anchor. It never implies completion or write success.
 
 Never expose secrets, tokens, private recovery payloads or signed material.
+
+## Mandatory evidence-linked closing navigation
+Read governance/PFS_NATIVE_VISUAL_CONTINUATION_CONTRACT_V1.md from verified latest Current. Every relevant PFS native reply ends with a usable context-specific choice surface: resume exact verified task, safe audit/repair, or dashboard as valid. Use actual supported host-native actions; otherwise copyable exact PFS-prefixed commands. Never omit choices when valid options exist, never render fake buttons, and never promise an extension that is not running.
