@@ -52,3 +52,16 @@ Verify newest HEAD/pointer/lock/queue and allowlist. Create pre-change recovery 
 
 ## Display
 Child menu and card must display CLASSIFICATION, LIVE_OWNER, PFS_ROLE, STORAGE_MODE, SOURCE_CURRENT, RESTORE_STATUS and VERIFIED_EVIDENCE. Unknown becomes neutral HOLD, never a guessed LIVE class.
+
+## Mandatory source/backup priority — native authority first
+PRIORITY_1=ACTUAL_CANONICAL_ORIGIN_LIVE_AUTHORITY_GITHUB_OR_DRIVE
+PRIORITY_2=ORIGIN_SYSTEM_OWN_VERIFIED_DRIVE_OR_REPO_BACKUP
+PRIORITY_3=PFS_SEPARATE_BACKUP_RECOVERY_MIRROR
+CANONICAL_PLATFORM=PER_SYSTEM_VERIFIED_NOT_GLOBAL_HARDCODE
+ORIGIN_BACKUP_NE_ORIGIN_LIVE_CURRENT=TRUE
+PFS_BACKUP_NE_ORIGIN_LIVE_CURRENT=TRUE
+OLDER_BACKUP_MUST_NOT_SUPERSEDE_NEWER_VALID_ORIGIN=TRUE
+FALLBACK_REQUIRES_EXPLICIT_RECOVERY_GATES_AND_OWNER_AUTHORIZATION=TRUE
+PFS_LOCAL_LIVE_AUTHORITY=ONLY_WHEN_NATIVE_PFS_OWNERSHIP_VERIFIED
+LOCAL_SYSTEM_ZIP=ARTIFACT_NOT_IMPLICIT_LIVE_INSTANCE
+For an external system: resolve its true current authority (Repo or Drive) first; separately verify its own first-party backup, then record a PFS-independent backup only with suitable scope, consent and direct readback. Never confuse PFS's own GitHub authority with authority over the external system.
