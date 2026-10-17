@@ -61,3 +61,6 @@ During UPDATE, before child changes, rehydrate governance/CHILD_AUTHORITY_STORAG
 
 ## Three checks then learning
 Apply governance/PFS_LEARNING_BY_DOING_CONTRACT.md: max three repeat probes per unchanged causal failure. Change method or HOLD, record evidence, preserve task continuation. Does not bypass locks, native approvals, readback or pointer-last requirements.
+
+## Mandatory visual closure and original task resumption
+Resolve governance/PFS_NATIVE_VISUAL_CONTINUATION_CONTRACT_V1.md. After readback/pointer-last, display actual status, evidence, blockers, exact original task return anchor and working next-action choices. New user feedback is processed causally, then prior task resumes unless blocked. No fake buttons, no unnecessary same-failure checks.
