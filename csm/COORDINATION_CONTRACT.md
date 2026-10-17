@@ -18,3 +18,6 @@ Boundaries:
 
 ## Child storage/authority classification
 At UPDATE and NEW CHILD, coordinate evidence-first EXTERNAL_BACKUP_CHILD / PFS_LOCAL_LIVE_CHILD / SYSTEM_ARTIFACT_CHILD classification using governance/CHILD_AUTHORITY_STORAGE_POLICY_V1.md. CSM is not an independent owner or child. On ambiguity HOLD. Never reclassify existing children automatically or infer runtime authority from a backup ZIP.
+
+## Causal learning coordination
+Coordinate the native MAX_3_IDENTICAL_CHECKS_THEN_LEARNING_BY_DOING rule via governance/PFS_LEARNING_BY_DOING_CONTRACT.md. Deduplicate retries by failure signature and task, preserve blockers and return anchors. CSM cannot unlock permissions or invent external Bridge capabilities.
