@@ -11,11 +11,11 @@
     "BINARY_TRANSFER_BLOCKED_AFTER_DIRECT_ATTEMPT"
   ],
   "eligibility": {
-    "source_available": true,
-    "source_hash_verified": true,
-    "source_size_verified": true,
-    "publication_allowed": true,
-    "target_unambiguous": true,
+    "source_available": false,
+    "source_hash_verified": false,
+    "source_size_verified": false,
+    "publication_allowed": false,
+    "target_unambiguous": false,
     "direct_path_blocked": true
   },
   "action": "PREPARE_COMPLETE_REPAIR_PACKAGE_AUTOMATICALLY",
@@ -66,5 +66,25 @@
     "plugin_creator_binary_endpoint_verified": false,
     "create_new_bridge_per_task": false,
     "foreign_runtime_mutation": false
+  },
+  "eligibility_interpretation": "DEFAULT_DENY_PLACEHOLDERS_NOT_LIVE_EVIDENCE",
+  "per_job_evidence_required": [
+    "source_exact_bytes",
+    "source_sha256_computed_from_bytes",
+    "source_size_computed_from_bytes",
+    "source_git_blob_identity_if_git_origin",
+    "explicit_authorized_target_repo_branch_path",
+    "actual_write_approval",
+    "prepush_remote_head_recheck",
+    "independent_remote_readback_bytes_sha256_size"
+  ],
+  "binary_readback_repair": {
+    "status": "HOLD_BINARY_BYTES_NOT_AVAILABLE_IN_CURRENT_HOST",
+    "failure_class": "UTF8_ONLY_CONNECTOR_AND_UNREACHABLE_RAW_NETWORK",
+    "forbid_identical_retries": true,
+    "alternative": "EXISTING_BRIDGEGEN_LOCAL_GIT_CLONE_OR_AUTHORIZED_BINARY_CAPABLE_TRANSPORT",
+    "no_automatic_child_activation": true,
+    "no_automatic_publication": true,
+    "source_sha256_unverified": true
   }
 }
