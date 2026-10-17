@@ -58,3 +58,6 @@ Read [plugin lifecycle](../../references/plugin-lifecycle.md) for native plugin-
 
 ## Child Authority & Storage preflight
 During UPDATE, before child changes, rehydrate governance/CHILD_AUTHORITY_STORAGE_POLICY_V1.md and classify the precise target and source-first backup hierarchy. An external live system may only be updated as PFS backup/recovery metadata; local PFS-owned work may update LIVE current or verified artifact according to class. Preserve interrupted task stack and return anchor when a user's new relevant detail arrives, then return to original work after processing. Do not treat new information as cancellation.
+
+## Three checks then learning
+Apply governance/PFS_LEARNING_BY_DOING_CONTRACT.md: max three repeat probes per unchanged causal failure. Change method or HOLD, record evidence, preserve task continuation. Does not bypass locks, native approvals, readback or pointer-last requirements.
