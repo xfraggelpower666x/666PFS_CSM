@@ -39,3 +39,6 @@ Dashboard state must be derived from verified current evidence.
 ---
 
 Read [plugin lifecycle](../../references/plugin-lifecycle.md) for native plugin-current inspection, impact, parity and backup requirements.
+
+## Contextual menu requirement
+Read governance/PFS_NATIVE_VISUAL_CONTINUATION_CONTRACT_V1.md. Dashboard and progress states must end with genuine context-aware navigation to next approved task, relevant audit and dashboard; use real host controls only when available. No inert buttons.
