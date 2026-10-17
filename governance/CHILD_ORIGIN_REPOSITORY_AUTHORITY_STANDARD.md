@@ -23,3 +23,6 @@ NAME_MATCH_ALONE=INSUFFICIENT
 EXTERNAL_REPOSITORY_CANDIDATE_WITHOUT_BINDING=INCOMPLETE_EVIDENCE
 CHILD_AUTOLOAD=FORBIDDEN
 CROSS_SYSTEM_MERGE=FORBIDDEN
+
+## Classification policy V1.0
+The binding rule is refined by governance/CHILD_AUTHORITY_STORAGE_POLICY_V1.md: verified externally owned live systems are EXTERNAL_BACKUP_CHILD even when Drive-hosted or not in GitHub. A local PFS-owned live production is PFS_LOCAL_LIVE_CHILD; verified self-contained local package is SYSTEM_ARTIFACT_CHILD. Merely possessing an origin repository path does not override independently verified actual owner or authorize reassignment. Existing child identities remain unchanged pending separate evidence and explicit native authorization.
