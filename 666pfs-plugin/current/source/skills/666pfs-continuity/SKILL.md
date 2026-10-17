@@ -39,3 +39,6 @@ Never restart a workflow simply because a new chat/turn occurred.
 
 ## Persistent interruptions and return
 For every interruption: preserve active task, scoped task stack, verified phase, completed/open obligations, interruption cause, current HEAD/pointer, rollback anchor and next meaningful step. Absorb new relevant information, classify dependent changes, then resume the interrupted task from its validated return anchor; do not restart, silently drop it, or automatically mutate. For NEW/NEXT CHAT, use verified same-lineage handoff only, never globally latest-by-time. Pending auth/lock/conflict stays blocked. Rehydrate fresh repository Current first; fresh-host acceptance remains independent. Patterns from CLIC/STREAM/LYVRA are evidence only, not foreign authority.
+
+## Persistent task carrier
+On every continuation resolve governance/PFS_TASK_CONTINUITY_CONTRACT.md and handoff/PFS_TASK_CONTINUITY_CURRENT.json from verified latest PFS Current. Use scoped task stack and currentness; process causal additions then resume prior task from last verified return anchor. No automatic resumed write through an unresolved blocker. NEW/NEXT CHAT requires lineage-verified handoff and independent fresh-host acceptance.
