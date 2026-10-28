@@ -2,70 +2,48 @@
   "schema": "PFS_NATIVE_TASK_CONTINUITY_V1",
   "system_id": "666PFS-CORE-001",
   "authority": "GITHUB_CURRENT",
-  "status": "PLUGIN_0_1_11_RELEASE_VERIFIED_BINARY_HOST_OPEN",
-  "source_head_before_change": "679b220d9d0750879c237d5d84daef00737029ea",
-  "prechange_recovery_branch": "backup/pre-continuity-taskstack-20261017",
+  "status": "PLUGIN_0_1_11_CURRENT_RELEASE_RECONCILED_BINARY_HOST_OPEN",
   "current_work": "PFS_PLUGIN_0_1_11_BINARY_PARITY_AND_FRESH_HOST",
   "task_stack": [
     {
-      "task_id": "PFS_CHILD_POLICY_PLUGIN_RELEASE",
-      "state": "RESUMED_RELEASE_PUBLISHED_ACCEPTANCE_PENDING",
-      "last_verified_phase": "PLUGIN_V0_1_11_VISUAL_SKILLS_READBACK_VERIFIED",
+      "task_id": "PFS_PLUGIN_0_1_11_BINARY_PARITY_AND_FRESH_HOST",
+      "state": "RESUMED_CURRENT_RELEASE_RECONCILED_ACCEPTANCE_PENDING",
+      "last_verified_phase": "LIVE_METADATA_CURRENT_RELEASE_pluginrel_6ade50_VERIFIED",
       "return_anchor": "PFS_PLUGIN_0_1_11_BINARY_PARITY_AND_FRESH_HOST",
-      "next_meaningful_step": "OBTAIN_INDEPENDENT_RELEASE_BYTES_VIA_NEW_AUTHORIZED_TRANSPORT_AND_FRESH_HOST_TEST",
+      "next_meaningful_step": "OBTAIN_CURRENT_RELEASE_BYTES_THROUGH_AUTHORIZED_MATERIALIZABLE_TRANSPORT_THEN_HASH_AND_FRESH_HOST_TEST",
       "blockers": [
-        "EXACT_ARCHIVE_AND_PNG_BINARY_PARITY_PENDING",
+        "EXACT_ARCHIVE_BINARY_PARITY_PENDING_TRANSPORT",
         "FRESH_HOST_ACCEPTANCE_NOT_TESTED"
       ]
     },
     {
-      "task_id": "PFS_NATIVE_CONTINUITY_INTEGRATION",
-      "state": "REPO_NATIVE_COMPLETED",
-      "last_verified_phase": "NATIVE_CONTINUITY_CONTRACT_POINTER_LAST_READBACK",
-      "return_anchor": "PFS_CONTINUITY_READBACK_THEN_RETURN_TO_PLUGIN_RELEASE",
-      "next_meaningful_step": "NONE_COMPLETED"
-    }
-  ],
-  "interruptions": [
-    {
-      "task_id": "PFS_CHILD_POLICY_PLUGIN_RELEASE",
-      "cause": "USER_NEW_INFORMATION_CONTINUITY_REQUIREMENT",
-      "action": "ABSORB_RELEVANT_INFORMATION_AND_RESUME",
-      "cancellation": false
+      "task_id": "TRACKHUB_32001_BACKUP_REFRESH",
+      "state": "SOURCE_v1.15.0_VERIFIED_BACKUP_REFRESH_PENDING",
+      "last_verified_phase": "EXTERNAL_SOURCE_CURRENT_VERIFIED_PFS_BACKUP_STILL_v1.11.0",
+      "return_anchor": "PFS_PLUGIN_0_1_11_BINARY_PARITY_AND_FRESH_HOST",
+      "next_meaningful_step": "IMPORT_v1.15.0_BACKUP_BYTES_ONLY_AFTER_DIRECT_BINARY_TRANSFER_AND_READBACK",
+      "blockers": [
+        "PFS_REPO_BACKUP_BINARY_NOT_YET_IMPORTED"
+      ]
     }
   ],
   "obligations": [
     "CONCURRENCY_CHECK",
     "SOURCE_READBACK",
     "PLUGIN_RELEASE_PARITY",
-    "FRESH_HOST_TEST_INDEPENDENT"
+    "FRESH_HOST_TEST_INDEPENDENT",
+    "TRACKHUB_BACKUP_REFRESH"
   ],
-  "lineage": {
-    "scope": "PFS_ONLY",
-    "chat_lineage_id": null,
-    "global_latest_handoff_forbidden": true,
-    "new_next_chat_requires_fresh_current": true
-  },
   "gates": {
     "selected_child": "NONE",
     "foreign_mutation": false,
     "automatic_adoption": false,
     "host_verified": false
   },
-  "rules": {
-    "return_anchor_before_new_information": true,
-    "resume_previous_work_after_processing": true,
-    "explicit_user_stop_or_new_direct_priority_overrides_auto_resume": true,
-    "pending_authority_lock_or_conflict_blocks_writes": true
-  },
   "current_verified_release": {
     "version": "0.1.11",
-    "release_id": "pluginrel_6ad2da650c5481918876be45df63c130",
-    "evidence_freeze": "history/PFS_VISUAL_PLUGIN_V0111_RELEASE_READBACK_2026-10-17.md",
-    "release_publication": true,
+    "release_id": "pluginrel_6ade50fe20d881918eb6bff84d01c3a0",
     "binary_parity": false,
     "fresh_host_acceptance": false
-  },
-  "reconciled_from_pointer_head": "dcbc17fc6998cc376fd882c31ee59fbebaa37a8d",
-  "reconciled_from_pointer_blob": "7ddc44a858077fa3641aa093914ee589ca97d7ec"
+  }
 }
