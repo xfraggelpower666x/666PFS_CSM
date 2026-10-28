@@ -1,58 +1,42 @@
 {
   "schema": "PFS_MANAGED_PLUGIN_BACKUP_ROUND_CURRENT_vNext",
-  "date": "2026-10-09",
-  "status": "NO_STABLE_ROUND_FROZEN_MULTIPLE_CURRENT_RELEASES_SUPERSEDED",
+  "date": "2026-10-28",
+  "round_id": "PFS-MANAGED-PLUGIN-ROUND-2026-10-28-R03",
+  "status": "NO_STABLE_ROUND_FROZEN_CURRENT_SET_DIVERGED",
   "trigger": "666PFS UPDATE",
   "pfs": {
-    "plugin_id": "plugins_6ac695d745d881919c3ea2766c09e6ee",
-    "version": "0.1.7",
-    "live_release_id": "pluginrel_6ac6f50503888191941c952862fb4d6d",
-    "live_file_count": 24,
-    "repository_source_file_count": 24,
+    "version": "0.1.11",
+    "live_release_id": "pluginrel_6ade50fe20d881918eb6bff84d01c3a0",
     "exact_current_release_archive_exposed": true,
     "exact_current_release_archive_materialized": false,
-    "archive_transport_attempt": "FAILED_CONTAINER_DNS_AND_WEB_CACHE_MISS",
-    "exact_current_release_binary_parity": "READBACK_PENDING",
-    "backup_execution": "DEFERRED_UNTIL_EXACT_RELEASE_BINARY_READBACK"
+    "exact_current_release_binary_parity": "READBACK_PENDING_TRANSPORT_MATERIALIZATION_BLOCKED"
   },
   "lyvra": {
-    "authority_repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
-    "authority_branch": "lyvra",
-    "authority_head_observed": "55f157948da4907c1666dde05f9c5888a44ac6bf",
-    "account_version": "0.13.47",
-    "account_release_id": "pluginrel_6ac74b1f99ac8191a4c800e9180c2e9b",
-    "native_version": "0.1.50",
-    "native_release_id": "pluginrel_6ac74b0b5c88819192dca918ea3860a4",
-    "runtime_plugin_state_fingerprint": "13f7acd3cecc2e6398300525fc4c1b4859df9014bb7d8fcb769ee71a4ff39bea",
-    "approval_status": "HISTORICAL_APPROVAL_SUPERSEDED_CURRENT_BACKUP_BLOCKED",
-    "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-08-045",
-    "fresh_native_approval_required": true,
-    "mutation_by_pfs": "NONE"
+    "authority_head": "f3d5e85a10b12922267556d5888eb1b0003dd23f",
+    "native_version": "0.1.84",
+    "native_release_id": "pluginrel_6ae2658321948191904144004c263041",
+    "account_version": "0.13.80",
+    "account_release_id": "pluginrel_6ae265ae571481919e20e32add39716d",
+    "prior_approval_status": "SUPERSEDED",
+    "fresh_native_approval_required": true
   },
   "clic": {
-    "authority_repo": "xfraggelpower666x/666CLICPRO",
-    "authority_branch": "clic-migration-rev79-staging",
-    "authority_head_observed": "835b17d27bb140d44a38bbc90fbefc9c03f3f170",
-    "current_version": "0.1.22",
-    "current_release_id": "pluginrel_6ac6f4e703288191b8757f336d33e186",
-    "live_readback": "VERIFIED_CURRENT_RELEASE_METADATA_AND_27_OF_27_TEXT_FILE_CONTENT_PARITY",
-    "current_approval_status": "SUPERSEDED_BY_V0_1_22_SNAPSHOT_APPROVAL_PENDING_LIVE_REVALIDATION",
-    "prior_approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-08-023",
-    "fresh_native_approval_required": true,
-    "binary_readback": "PENDING",
-    "mutation_by_pfs": "NONE"
+    "authority_head": "bba79a83c3352ba77cf9cf90f6e0b8d5ae3b0822",
+    "version": "0.1.22",
+    "release_id": "pluginrel_6ac6f4e703288191b8757f336d33e186",
+    "prior_approval_status": "ROUND_REVALIDATION_REQUIRED",
+    "fresh_native_approval_required": true
   },
   "stable_set": {
     "converged": false,
     "reasons": [
-      "PFS_EXACT_CURRENT_RELEASE_BINARY_PARITY_READBACK_PENDING",
-      "LYVRA_RELEASES_AND_RUNTIME_FINGERPRINT_CHANGED_AFTER_PRIOR_APPROVAL",
-      "CLIC_CURRENT_RELEASE_ADVANCED_TO_0.1.22_AND_PRIOR_APPROVAL_SUPERSEDED"
+      "PFS_EXACT_CURRENT_RELEASE_BINARY_PARITY_OPEN",
+      "LYVRA_PLUGIN_SET_ADVANCED_TO_NATIVE_0.1.84_ACCOUNT_0.13.80",
+      "PRIOR_FOREIGN_APPROVALS_DO_NOT_BIND_NEW_R03_SET"
     ]
   },
-  "coordinated_notice": "NOT_SENT_NO_STABLE_SET",
   "foreign_backup_write": "NONE",
-  "foreign_native_approval_consumption": "NONE",
-  "new_change_after_freeze_requires_new_round": true,
-  "return_anchor": "REVALIDATE_PFS_EXACT_RELEASE_BINARY_THEN_FREEZE_NEW_STABLE_SET_AND_REQUEST_FRESH_LYVRA_CLIC_APPROVALS"
+  "foreign_mutation": "NONE",
+  "coordinated_notice": "NOT_SENT_NO_STABLE_SET",
+  "return_anchor": "PFS_PLUGIN_0_1_11_BINARY_PARITY_AND_FRESH_HOST"
 }
