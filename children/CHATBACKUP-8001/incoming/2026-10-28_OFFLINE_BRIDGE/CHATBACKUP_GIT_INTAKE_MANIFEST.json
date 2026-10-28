@@ -1,0 +1,28 @@
+{
+  "schema": "666PFS_CHATBACKUP_INTAKE_V1",
+  "purpose": "review_only",
+  "state": "PENDING_PFS_GOVERNANCE",
+  "source": "USER_PROVIDED_ORIGINAL_ZIPS",
+  "scope": "EXTERNAL_BACKUP_CHILD",
+  "child_id": "CHATBACKUP-8001",
+  "base_main_sha": "3c893d520a15b46a6c56ef494f7bdd2e3afbcc7f",
+  "files": [
+    {
+      "filename": "666_CHATBACKUP_PC_TOOL_v1.10.0.zip",
+      "size_bytes": 13409046,
+      "sha256": "b3cfdfeb79f325a9a3d1bc7f9448fe4529b66d6f56725c6bf4b3cedc6b64ed68",
+      "zip_entries": 66,
+      "crc": "PASS"
+    },
+    {
+      "filename": "666_CHATBACKUP_SCRIPTABLE_IPHONE_v1.0.5.zip",
+      "size_bytes": 20294,
+      "sha256": "a738cb0573b1e65b1a8f5c514308e350b925ebe7e2c3600bbf15052643504707",
+      "zip_entries": 4,
+      "crc": "PASS"
+    }
+  ],
+  "no_main_write": true,
+  "no_pointer_write": true,
+  "notice": "Receipt is not a native PFS approval or live-child integration."
+}
