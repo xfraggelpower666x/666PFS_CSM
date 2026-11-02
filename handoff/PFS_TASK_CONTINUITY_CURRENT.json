@@ -45,5 +45,30 @@
     "release_id": "pluginrel_6ade50fe20d881918eb6bff84d01c3a0",
     "binary_parity": false,
     "fresh_host_acceptance": false
+  },
+  "offline_binary_facet": {
+    "capability": "PFS_OFFLINE_BINARY_TRANSFER_AND_READBACK",
+    "status": "ACTIVE_POLICY_RELEVANCE_CHECK",
+    "scope": "PFS_BINARY_WORKFLOWS_ONLY",
+    "resume_rule": "RECHECK_CURRENT_HEAD_AND_LAST_VERIFIED_STAGE_THEN_EXECUTE_ONLY_MISSING_ACTION",
+    "phase_order": [
+      "SOURCE_VERIFICATION",
+      "REMOTE_EXISTENCE",
+      "TRANSPORT_IF_NEEDED",
+      "REMOTE_BYTE_READBACK_IF_NEEDED",
+      "RECEIPT_VALIDATION",
+      "NATIVE_GOVERNANCE",
+      "FREEZE_AND_POINTER_LAST"
+    ],
+    "windows_execution": "MANUAL_USER_ACTION_ONLY",
+    "evidence_states": [
+      "REMOTE_SOURCE_VERIFIED",
+      "READBACK_PENDING",
+      "RECEIPT_VALIDATED",
+      "CONFLICT_QUARANTINE"
+    ],
+    "reference_child": "MP3MANAGER-45001",
+    "no_duplicate_zip": true,
+    "no_change_to_existing_task_stack": true
   }
 }
