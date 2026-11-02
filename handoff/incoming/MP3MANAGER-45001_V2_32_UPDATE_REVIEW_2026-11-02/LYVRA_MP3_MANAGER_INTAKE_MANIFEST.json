@@ -1,0 +1,25 @@
+{
+  "schema": "666PFS_MP3MANAGER_45001_UPDATE_INTAKE_V1",
+  "purpose": "review_only",
+  "state": "PENDING_PFS_CHILD_UPDATE_GOVERNANCE",
+  "registered_child_id": "MP3MANAGER-45001",
+  "registered_system_id": "666PFS-MP3MANAGER-001",
+  "classification": "SYSTEM_ARTIFACT_CHILD",
+  "previous_pfs_version": "2.27",
+  "candidate_version": "2.32",
+  "base_main_sha": "d45dd2ad26b9c7087832b6d7efd5ff95a89cae2f",
+  "files": [
+    {
+      "filename": "L.Y.V.R.A._MP3_MANAGER_v2_32_PORTABLE_ORDNER_BUILD.zip",
+      "size_bytes": 3293240,
+      "sha256": "e41ecb237c777f77e11ff79679b45ef4e01c2ae2c6cb54535152f5bfcd2fda07",
+      "zip_entries": 40,
+      "crc": "PASS"
+    }
+  ],
+  "previous_recovery_commit": "92aac7fd9f854a1fefdcc677692d99c0f5243b18",
+  "no_main_write": true,
+  "no_pointer_write": true,
+  "no_foreign_write": true,
+  "notice": "Review-only newer artifact. PFS v2.27 remains the current recoverable release until governed provider readback and pointer-last update."
+}
