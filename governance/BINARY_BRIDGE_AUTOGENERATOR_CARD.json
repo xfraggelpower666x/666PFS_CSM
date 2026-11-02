@@ -86,5 +86,49 @@
     "no_automatic_child_activation": true,
     "no_automatic_publication": true,
     "source_sha256_unverified": true
+  },
+  "offline_binary_transfer_and_readback": {
+    "capability_id": "PFS_OFFLINE_BINARY_TRANSFER_AND_READBACK",
+    "status": "NATIVE_POLICY_ENABLED",
+    "mode": "FACET_OF_EXISTING_BINARY_BRIDGE_AND_RECOVERY",
+    "trigger_scope": "RELEVANT_PFS_BINARY_UPDATES_ONLY",
+    "selection_order": [
+      "VERIFY_EXISTING_REMOTE_COMMIT_AND_BLOB",
+      "DIRECT_PROVIDER_BINARY_TRANSFER_AND_READBACK_WHEN_AVAILABLE",
+      "OFFLINE_BRIDGE_ONLY_IF_DIRECT_TRANSPORT_BLOCKED_AND_PAYLOAD_NOT_ALREADY_REMOTE",
+      "OFFLINE_READBACK_ONLY_IF_REMOTE_BYTES_NOT_YET_VERIFIED",
+      "VERIFY_RECEIPT_AND_RESUME_PFS_GOVERNANCE"
+    ],
+    "never_duplicate_upload": true,
+    "never_auto_execute_windows": true,
+    "windows_action": "EXPLICIT_USER_LAUNCH_REQUIRED",
+    "receipt_requirements": [
+      "child_id",
+      "version",
+      "review_commit",
+      "blob_sha",
+      "sha256",
+      "size_bytes",
+      "zip_entries",
+      "crc_validation"
+    ],
+    "receipt_evidence": "RECEIPT_IS_INPUT_NOT_SOLE_PROOF_VERIFY_AGAINST_REPOSITORY_AND_LOCAL_BYTES_OR_BRIDGE_READBACK",
+    "receipt_on_missing_crc": "HOLD_UNTIL_SEPARATE_CRC_EVIDENCE_VERIFIED",
+    "resume": "LAST_VERIFIED_CHECKPOINT_REVALIDATE_HEAD_AND_SOURCE_FRESHNESS",
+    "remote_readback": "INDEPENDENT_BYTE_CHECK_REQUIRED_FOR_COMPLETION",
+    "integration": "EXISTING_PFS_GOVERNANCE_FREEZE_RECOVERY_POINTER_LAST",
+    "foreign_authority": "PRESERVE_NATIVE_SYSTEM_APPROVALS",
+    "statuses": [
+      "VERIFIZIERT",
+      "READBACK_PENDING",
+      "WRITE_BLOCKED",
+      "CONFLICT_QUARANTINE"
+    ],
+    "provenance_cases": [
+      "MP3MANAGER-45001_v2.27",
+      "MP3MANAGER-45001_v2.32"
+    ],
+    "automatic_policy_check": true,
+    "no_new_child": true
   }
 }
