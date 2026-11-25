@@ -1,0 +1,479 @@
+{
+  "schema": "PFS_TO_MAIN_BRAIN_CLEAR_SOURCE_HANDOFF_R01",
+  "authority": {
+    "pfs_repo": "xfraggelpower666x/666PFS_CSM",
+    "pfs_branch": "main",
+    "pfs_head": "08989d5dc71259cbebf108c71d2e315aa9ac28a1",
+    "main_brain_repo": "xfraggelpower666x/666MAIN_BRAIN_MYCEL_SYSTEM",
+    "main_brain_branch": "666MAIN_BRAIN",
+    "main_brain_head": "ecea73da8a4d046db86f88f4dbf8abb4fd900f60",
+    "main_brain_tree": "90e0a092f41ddfab878b9540cf7c3b4d430c72a1"
+  },
+  "counts": {
+    "active": 28,
+    "stored_folders": 40,
+    "preservation": 4,
+    "source_archives": 31,
+    "existing_main_brain_projects": 11,
+    "zip_directories_readback": 17,
+    "zip_entries_listed": 352,
+    "extension_based_text_source_candidates": 332,
+    "locally_extracted_archive_count": 1,
+    "locally_extracted_text_files": 3
+  },
+  "project_existing_names": [
+    "3dxchat_tools",
+    "666CLS",
+    "666StreamTranscoder",
+    "666TDI",
+    "666_AUTO_DJ_STUDIO",
+    "666_CODEFORGE_ALLIANCE",
+    "666_CYBER_DRIVE_CONTROL",
+    "666_FULL_LYRICS_INTELLIGENCE",
+    "666_RESEARCH_MD_DATABASE_ORCHESTRA",
+    "LYVRA_CODING_PROFI",
+    "LYVRA_MP3_COMMAND_CENTER"
+  ],
+  "potential_semantic_identity_matches_REVIEW_ONLY": [
+    {
+      "main_project": "666_CODEFORGE_ALLIANCE",
+      "pfs_children": [
+        "CODEFORGE-11001"
+      ],
+      "match": "UNVERIFIED_DO_NOT_MERGE"
+    },
+    {
+      "main_project": "LYVRA_MP3_COMMAND_CENTER",
+      "pfs_children": [
+        "MP3MANAGER-45001"
+      ],
+      "match": "UNVERIFIED_DO_NOT_MERGE"
+    },
+    {
+      "main_project": "3dxchat_tools",
+      "pfs_children": [
+        "3DXINFO-23001",
+        "3DXUI-30001"
+      ],
+      "match": "UNVERIFIED_DO_NOT_MERGE"
+    },
+    {
+      "main_project": "666StreamTranscoder",
+      "pfs_children": [
+        "STREAM-5001",
+        "STREAMCTRL-40001"
+      ],
+      "match": "UNVERIFIED_DO_NOT_MERGE"
+    },
+    {
+      "main_project": "666_AUTO_DJ_STUDIO",
+      "pfs_children": [
+        "STREAM-5001"
+      ],
+      "match": "UNVERIFIED_DO_NOT_MERGE"
+    }
+  ],
+  "children": [
+    {
+      "child_id": "3DXINFO-23001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "3DXUI-30001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "ASMIF-20001",
+      "source_class": "HISTORICAL_OR_CANDIDATE_REVIEW_ONLY",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "BRIDGEGEN-43001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "CFL-28001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "CGF-31001",
+      "source_class": "HISTORICAL_OR_CANDIDATE_REVIEW_ONLY",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "CLINT-17001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "CODEFORGE-11001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "CSLO-9001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "CSOA-22001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "CURES-16001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "CURSORFRAME-42001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "CURSORGEN-41001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "CYBERINTRO-38001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "CYBERINTROHQ-39001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "DISCORD-14001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "GIFT-21001",
+      "source_class": "HISTORICAL_OR_CANDIDATE_REVIEW_ONLY",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "GTCF-26001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "IG-29001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "IMRLA-25001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "ITRF-6001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "LIGHT-35001",
+      "source_class": "PRESERVATION_BACKUP_ONLY",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "LYVRA-DOLMETSCHER-13001",
+      "source_class": "HISTORICAL_OR_CANDIDATE_REVIEW_ONLY",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "LYVRA-PET-BACKUP-20261008",
+      "source_class": "HISTORICAL_OR_CANDIDATE_REVIEW_ONLY",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "LYVRADASH-39001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "LYVRAPLUGIN-37001",
+      "source_class": "PRESERVATION_BACKUP_ONLY",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "MIRA-27001",
+      "source_class": "MIGRATED_OUT_HISTORY_ONLY",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "MITF-18001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "MP3MANAGER-45001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "PFSPLUGIN-44001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "PHG-3001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "SCC-12001",
+      "source_class": "MIGRATED_OUT_HISTORY_ONLY",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "SOUNDWAVE-34001",
+      "source_class": "PRESERVATION_BACKUP_ONLY",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "STREAM-5001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "STREAMCTRL-40001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "TRACKHUB-32001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "UCCF-10001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "UDF-19001",
+      "source_class": "HISTORICAL_OR_CANDIDATE_REVIEW_ONLY",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "UMIP-4001",
+      "source_class": "ACTIVE",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    },
+    {
+      "child_id": "WEBLYVRA-36001",
+      "source_class": "PRESERVATION_BACKUP_ONLY",
+      "main_brain_exact_name_present": false,
+      "mirror_policy": "NO_OVERWRITE; SEMANTIC_IDENTITY_REVIEW_REQUIRED"
+    }
+  ],
+  "archives_source_paths": [
+    "children/CYBERINTROHQ-39001/recovery/CYBERINTROHQ_v1.2.0_REPO_DELTA_SYSTEMSICHERUNG.zip",
+    "children/STREAMCTRL-40001/recovery/STREAMCTRL-40001_PFS_CHILD_SYSTEMSICHERUNG_2026-10-06.zip",
+    "children/GTCF-26001/runtime/GTCF-26001_v1.2.0_CANONICAL_SYSTEMBACKUP.zip",
+    "children/MIRA-27001/runtime/666MIRA_v1.0.17_SENTENCE_ALIAS_BINDING_SYSTEMSICHERUNG_666.zip",
+    "children/MITF-18001/runtime/MITF_v1.2.0_FROZEN.zip",
+    "children/UMIP-4001/runtime/666UMIP_v1.11.1_SYSTEMSICHERUNG_666.zip",
+    "children/CSOA-22001/runtime/CSOA-22001_v4.1.0_UHSCRF_ADDON_FREEZE_01.zip",
+    "children/3DXINFO-23001/runtime/3DX_INFO_COMMAND_INTELLIGENCE_FRAMEWORK_v1.1.0.zip",
+    "children/ITRF-6001/runtime/666_IMAGE_TRANSLATION_REBUILD_FRAMEWORK_v1.5.0.zip",
+    "children/CFL-28001/runtime/666_CYBER_FREAK_LOVE_v1.4.0_SYSTEMSICHERUNG.zip",
+    "children/3DXUI-30001/runtime/3DX_UI_SCHRIFT_GENERATOR_v1.4.2_PORTABLE_SYSTEMSICHERUNG.zip",
+    "children/IMRLA-25001/runtime/IMRLA-25001_v1.1.0_CANONICAL_SYSTEMSICHERUNG.zip",
+    "children/TRACKHUB-32001/runtime/666TRACKDESIGNHUB_v1.11.0_FULL.zip",
+    "children/CLINT-17001/runtime/666CLINT_CLINT-17001_v1.0.0_ICLOUD_MIGRATION_PACKAGE.zip",
+    "children/UCCF-10001/runtime/UCCF_v1.4.0_FREEZE_05_SYSTEMSICHERUNG.zip",
+    "children/CSLO-9001/runtime/666PFS_CHILD_CAUSAL_STORY_LYRIC_ORCHESTRA_PFS-CSLO-001_v1.0.0_FREEZE.zip",
+    "children/SCC-12001/runtime/SoundCloud_Control_Center_PC_v2_2_0_FREEZE_01_SYSTEMSICHERUNG.zip",
+    "children/CYBERINTROHQ-39001/runtime/666_cyber_intro_template_v1.1.0_FROZEN.zip",
+    "children/CYBERINTROHQ-39001/runtime/666_cyber_intro_template_v1.2.0_FROZEN.zip",
+    "children/CURSORGEN-41001/recovery/666_LYVRA_NEON_CHARACTER_WINDOWS_CURSOR_PACK_v2_1_BATCH.zip",
+    "children/CYBERINTROHQ-39001/recovery/CYBERINTROHQ_SYSTEMSICHERUNG_v1.2.0_2026-10-06.zip",
+    "children/IG-29001/runtime/666IG__666_ICON_GENERATOR_v1.2.0_R1_LOCAL_FREEZE_2026-08-28.zip",
+    "children/CODEFORGE-11001/runtime/CODEFORGE_v1.6.0_FULL_FREEZE_01.zip",
+    "children/PHG-3001/runtime/666_PHOTOREALISMUS_GENERATOR_v2_16_0_FREEZE_01.zip",
+    "children/LYVRADASH-39001/runtime/LYVRA_DASHBOARD_VISUAL_INTEGRATION_SYSTEMSICHERUNG_2026-10-06.zip",
+    "children/LYVRADASH-39001/recovery/LYVRA_DASHBOARD_VISUAL_INTEGRATION_SYSTEMSICHERUNG_v1.1.0_2026-10-06.zip",
+    "children/LYVRADASH-39001/runtime/LYVRA_DASHBOARD_VISUAL_INTEGRATION_SYSTEMSICHERUNG_v1.1.0_2026-10-06.zip",
+    "children/CYBERINTROHQ-39001/recovery/666_cyber_intro_SYSTEMSICHERUNG_v1.1.0_2026-10-06.zip",
+    "children/CURSORFRAME-42001/recovery/666_CURSOR_GENERATOR_OFFLINE_v0_3_0_SYSTEMSICHERUNG.zip",
+    "children/WEBLYVRA-36001/recovery/PFS_WEBLYVRA_36001_BACKUP_v1.2.0_2026-10-02.zip",
+    "children/DISCORD-14001/recovery/666PFS_DISCORD-14001_SYSTEMSICHERUNG_v0.6.9.11.zip"
+  ],
+  "archive_metadata": {
+    "verified_17_archive_central_directories": [
+      {
+        "child_id": "3DXINFO-23001",
+        "entries": 3,
+        "text_candidate_extension_count": 3
+      },
+      {
+        "child_id": "3DXUI-30001",
+        "entries": 16,
+        "text_candidate_extension_count": 16
+      },
+      {
+        "child_id": "CFL-28001",
+        "entries": 6,
+        "text_candidate_extension_count": 6
+      },
+      {
+        "child_id": "CLINT-17001",
+        "entries": 5,
+        "text_candidate_extension_count": 4
+      },
+      {
+        "child_id": "CSLO-9001",
+        "entries": 24,
+        "text_candidate_extension_count": 23
+      },
+      {
+        "child_id": "CSOA-22001",
+        "entries": 7,
+        "text_candidate_extension_count": 7
+      },
+      {
+        "child_id": "CYBERINTROHQ-39001",
+        "entries": 3,
+        "text_candidate_extension_count": 3
+      },
+      {
+        "child_id": "GTCF-26001",
+        "entries": 4,
+        "text_candidate_extension_count": 3
+      },
+      {
+        "child_id": "IMRLA-25001",
+        "entries": 8,
+        "text_candidate_extension_count": 8
+      },
+      {
+        "child_id": "ITRF-6001",
+        "entries": 14,
+        "text_candidate_extension_count": 14
+      },
+      {
+        "child_id": "MIRA-27001",
+        "entries": 7,
+        "text_candidate_extension_count": 7
+      },
+      {
+        "child_id": "MITF-18001",
+        "entries": 6,
+        "text_candidate_extension_count": 5
+      },
+      {
+        "child_id": "SCC-12001",
+        "entries": 84,
+        "text_candidate_extension_count": 69
+      },
+      {
+        "child_id": "STREAMCTRL-40001",
+        "entries": 7,
+        "text_candidate_extension_count": 7
+      },
+      {
+        "child_id": "TRACKHUB-32001",
+        "entries": 34,
+        "text_candidate_extension_count": 34
+      },
+      {
+        "child_id": "UCCF-10001",
+        "entries": 118,
+        "text_candidate_extension_count": 118
+      },
+      {
+        "child_id": "UMIP-4001",
+        "entries": 6,
+        "text_candidate_extension_count": 5
+      }
+    ],
+    "scope": "ZIP_DIRECTORY_READBACK_ONLY_NOT_FULL_EXTRACTION"
+  },
+  "actual_extraction": {
+    "child_id": "CYBERINTROHQ-39001",
+    "source_archive": "children/CYBERINTROHQ-39001/recovery/CYBERINTROHQ_v1.2.0_REPO_DELTA_SYSTEMSICHERUNG.zip",
+    "source_git_blob": "7bfcc46dab86380443990e77eb4d673079df6b58",
+    "source_git_blob_verified": true,
+    "zip_crc_passed": true,
+    "scope": "ONE_DELTA_ARCHIVE_NOT_FULL_CHILD",
+    "files": [
+      {
+        "path": "CYBERINTROHQ-39001/recovery/CYBERINTROHQ_v1.2.0_REPO_DELTA_SYSTEMSICHERUNG/AUDIT_FINAL.md",
+        "sha256": "0d07d438078918454c26d32e24473591d53b920d4d52d3a527559f432c1a52f5",
+        "size_bytes": 329
+      },
+      {
+        "path": "CYBERINTROHQ-39001/recovery/CYBERINTROHQ_v1.2.0_REPO_DELTA_SYSTEMSICHERUNG/PATCH_CONTRACT.md",
+        "sha256": "7dc9a5dda44f71c7d572c8d1dae5caca59ecd349356db7e7d050335134fa7a9a",
+        "size_bytes": 894
+      },
+      {
+        "path": "CYBERINTROHQ-39001/recovery/CYBERINTROHQ_v1.2.0_REPO_DELTA_SYSTEMSICHERUNG/REPO_DELTA_MANIFEST.md",
+        "sha256": "f6dd773688a073bcb12b9c9ceeec38f98ec65e68960ddea48ea670c5be132dd4",
+        "size_bytes": 655
+      }
+    ]
+  },
+  "coverage_gaps": {
+    "archive_bytes_not_transferred_to_local": 30,
+    "archive_content_not_extracted": 30,
+    "main_brain_native_write": "BLOCKED_PENDING_NATIVE_APPROVAL_AND_CAS",
+    "pfs_writer_lock": "UNVERIFIED",
+    "pfs_pointer_parity": "CONFLICT_OPEN",
+    "repo_git_clone_in_container": "NETWORK_DNS_BLOCKED"
+  },
+  "no_remote_writes": true,
+  "no_existing_main_projects_modified": true,
+  "foreign_authority_unchanged": true,
+  "transfer_readback_revision": "2026-11-25_FRESH_MAIN_BRAIN_HEAD_ecea73da",
+  "transfer_status": "UPDATED_MANIFEST_ONLY_NO_NEW_ARCHIVE_EXTRACTION"
+}
