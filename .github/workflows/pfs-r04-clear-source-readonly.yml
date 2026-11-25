@@ -1,0 +1,71 @@
+name: PFS R04 clear-source read-only acceptance
+on:
+  workflow_dispatch:
+    inputs:
+      expected_pfs_head:
+        description: 'Exact PFS HEAD including this workflow commit (40-char SHA)'
+        required: true
+        type: string
+      expected_main_head:
+        description: 'Exact independently read MAIN BRAIN branch HEAD (40-char SHA)'
+        required: true
+        type: string
+      upload_clear_source:
+        description: 'Upload extracted source as short-lived workflow artifact (may include sensitive files)'
+        type: boolean
+        required: true
+        default: false
+permissions:
+  contents: read
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+          lfs: true
+      - name: Pin checkout to the approved exact HEAD
+        shell: bash
+        env:
+          PFS_HEAD: ${{ inputs.expected_pfs_head }}
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$PFS_HEAD"
+      - name: Run R04 isolated clear-source extraction
+        shell: bash
+        env:
+          PFS_HEAD: ${{ inputs.expected_pfs_head }}
+          MAIN_HEAD: ${{ inputs.expected_main_head }}
+          MAIN_BRAIN_READ_TOKEN: ${{ secrets.MAIN_BRAIN_READ_TOKEN }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/pfs-r04"
+          python3 tools/run_r04.py \
+            --repo "$GITHUB_WORKSPACE" \
+            --inventory "$GITHUB_WORKSPACE/tools/PFS_CLEAR_SOURCE_INVENTORY_REFRESHED.json" \
+            --pfs-head "$PFS_HEAD" \
+            --main-head "$MAIN_HEAD" \
+            --out "$RUNNER_TEMP/pfs-r04/child-clear-source"
+      - name: Publish receipt only
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: pfs-r04-receipt-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/pfs-r04/child-clear-source/R04_RECEIPT.json
+            ${{ runner.temp }}/pfs-r04/child-clear-source/STAGING_COMPLETE.json
+            ${{ runner.temp }}/pfs-r04/child-clear-source/STAGING_INCOMPLETE.json
+          if-no-files-found: warn
+          retention-days: 1
+      - name: Publish isolated source only on explicit opt-in
+        if: ${{ success() && inputs.upload_clear_source }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: pfs-r04-clear-source-${{ github.run_id }}
+          path: ${{ runner.temp }}/pfs-r04/child-clear-source/
+          if-no-files-found: error
+          retention-days: 1
+          include-hidden-files: false
