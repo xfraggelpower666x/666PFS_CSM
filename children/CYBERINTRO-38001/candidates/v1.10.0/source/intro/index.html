@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>666 / LYVRA Cyber Intro HUD Template</title>
+  <link rel="preload" as="image" href="assets/images/intro-background.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/images/intro-brand.png" />
+  <link rel="preload" as="image" href="assets/images/center-emblem.png" />
+  <link rel="stylesheet" href="assets/css/666-cyber-intro-hud-sequence.css" />
+  <style>
+    html, body { width:100%; min-height:100%; margin:0; background:#020006; }
+    body { min-height:100vh; min-height:100svh; overflow:hidden; }
+    #template-host { position:relative; width:100vw; height:100vh; height:100svh; }
+  </style>
+</head>
+<body>
+  <div id="template-host">
+    <div class="lyvra-cyber-sequence" data-intro-duration="4200" data-transition-duration="1100">
+
+      <!-- PHASE 1: REUSABLE INTRO. No redirect / URL / navigation. -->
+      <section class="lyvra-intro-stage" aria-labelledby="lyvra-intro-title">
+        <div class="lyvra-intro-scanlines" aria-hidden="true"></div>
+        <section class="lyvra-intro-panel" aria-live="polite">
+          <p class="lyvra-intro-eyebrow">666SOUNDsDESIGn · LYVRA interface</p>
+          <h1 class="lyvra-intro-title" id="lyvra-intro-title">CYBER BOOTING</h1>
+
+          <div class="lyvra-intro-brand" aria-label="LYVRA · Sound becomes feeling · 666SOUNDsDESIGn">
+            <img
+              class="lyvra-intro-brand-image"
+              src="assets/images/intro-brand.png"
+              width="1400"
+              height="591"
+              decoding="async"
+              fetchpriority="high"
+              alt="LYVRA · Sound becomes feeling · 666SOUNDsDESIGn"
+            />
+          </div>
+
+          <p class="lyvra-intro-status">INITIALIZING INTERFACE</p>
+          <div class="lyvra-intro-core" aria-hidden="true"></div>
+          <div class="lyvra-intro-progress-wrap" aria-label="Intro progress">
+            <div class="lyvra-intro-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <div class="lyvra-intro-bar"></div>
+            </div>
+            <div class="lyvra-intro-percent">0%</div>
+          </div>
+          <p class="lyvra-intro-phase-label">CONNECTING PROJECT SIGNAL</p>
+          <div class="lyvra-intro-steps" aria-hidden="true">
+            <div class="lyvra-intro-step active">Connect</div>
+            <div class="lyvra-intro-step">Authenticate</div>
+            <div class="lyvra-intro-step">Initialize</div>
+            <div class="lyvra-intro-step">READY</div>
+          </div>
+        </section>
+      </section>
+
+      <div class="lyvra-transition-fx" aria-hidden="true"></div>
+
+      <!-- PHASE 2: CYBER HUD + STATIC CENTER EMBLEM / v1.10 -->
+      <section class="lyvra-hud-stage" aria-label="Project interface">
+        <div class="lyvra-hud-stage-inner">
+          <section class="cyber-hud-logo" aria-label="666SOUNDsDESIGn Cyber HUD Logo">
+            <div class="hud-circuit hud-circuit-left"></div>
+            <div class="hud-circuit hud-circuit-right"></div>
+            <div class="hud-label hud-label-left" data-text="666SOUNDsDESIGn">666SOUNDsDESIGn</div>
+            <div class="hud-label hud-label-right" data-text="© FRAGGLEPOWER666">© FRAGGLEPOWER666</div>
+            <div class="hud-center-logo-wrap" aria-label="LYVRA Center Emblem">
+              <img
+                class="hud-center-art"
+                src="assets/images/center-emblem.png"
+                width="880"
+                height="1100"
+                decoding="async"
+                alt="666SOUNDsDESIGn · Sound becomes feeling · L.Y.V.R.A."
+              />
+            </div>
+
+            <!--
+              SYSTEM ONLINE: one-shot final state indicator.
+              It fades/blinks exactly 3 times, then remains visible.
+              The final visible state is held for 2 seconds.
+              Only after that hold does the host project/system start.
+            -->
+            <div class="hud-system-online" aria-live="polite">SYSTEM ONLINE</div>
+
+            <div class="hud-scanline"></div>
+            <div class="hud-reactor-ring"></div>
+          </section>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="assets/js/666-cyber-intro-sequence.js" defer></script>
+  <script src="assets/js/666-cyber-hud-logo.js" defer></script>
+</body>
+</html>
