@@ -73,13 +73,16 @@
   },
   "r07_continuation": {
     "scope": "STAGING_ONLY",
-    "status": "PARTIAL",
-    "verified_ci_run": 45925983023,
+    "status": "STAGING_HOST_MODULE_PASS_PRODUCTION_SCOPE_OPEN",
+    "verified_ci_run": 45926769602,
     "writer_regression": "12_OF_12_PASS",
     "child_blob_mode_parity": "90_OF_90_PASS",
-    "return_anchor": "PFS_R07_LIVE_CONNECTOR_ACCEPTANCE",
-    "next_meaningful_step": "TEST_NEW_CONNECTOR_ADAPTER_AND_REAUDIT_UPDATED_POINTER_BINDINGS",
+    "return_anchor": "PFS_R07_PRODUCTION_SCOPE_RECONCILIATION",
+    "next_meaningful_step": "ISOLATE_PRODUCTION_ELIGIBLE_DELTAS_AND_BIND_AUTHORIZED_PRODUCTION_WRITER",
     "preserved_prior_return_anchor": "PFS_PLUGIN_0_1_11_BINARY_PARITY_AND_FRESH_HOST",
-    "production_promotion": false
+    "production_promotion": false,
+    "native_module_acceptance": "PASS",
+    "live_inline_bridge_logic": "PASS_ISOLATED_PROBE",
+    "saved_module_live_binding": "NOT_EXECUTED"
   }
 }
