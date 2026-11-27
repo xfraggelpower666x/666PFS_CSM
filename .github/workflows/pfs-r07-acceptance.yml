@@ -17,5 +17,7 @@ jobs:
           persist-credentials: false
       - name: Writer regression
         run: python3 -m unittest discover -s tools -p test_r07_writer.py -v
+      - name: Connector contract regression
+        run: python3 -m unittest discover -s tools -p test_r07_connector_adapter.py -v
       - name: Original Git object parity
         run: python3 tools/r07_verify_integration.py HEAD
