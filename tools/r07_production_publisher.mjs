@@ -9,6 +9,7 @@ const allowedBody = new Set([
   "tools/r07_native_host_bridge.mjs", "tools/test_r07_writer.py",
   "tools/test_r07_connector_adapter.py", "tools/test_r07_native_host_bridge.mjs",
   "tools/r07_production_publisher.mjs", "tools/test_r07_production_publisher.mjs",
+  ".github/workflows/pfs-r07-production-acceptance.yml",
   "history/PFS_R07_PRODUCTION_ACCEPTANCE_20261127.md"
 ]);
 export async function publishPfs(host, request) {
