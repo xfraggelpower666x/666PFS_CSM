@@ -1,0 +1,13 @@
+{
+  "package": "666_CYBER_INTRO_PYTHON_START_BACKUP",
+  "version": "1.0",
+  "intro_version": "1.10.0",
+  "source_zip": "666_CYBER_INTRO_HUD_TEMPLATE_v1_10_AUDIT_REPAIR_FREEZE_SYSTEMSICHERUNG.zip",
+  "source_sha256": "3ec3326bcf514dd7783c9099b47c21360d59afb62b717cf60c3466cd462abc6f",
+  "source_size_bytes": 797163,
+  "purpose": "Standalone backup for embedding the intro as Python app startup sequence",
+  "startup_event": "lyvra:system-start",
+  "redirect": false,
+  "automatic_loop": false,
+  "frozen_source": true
+}

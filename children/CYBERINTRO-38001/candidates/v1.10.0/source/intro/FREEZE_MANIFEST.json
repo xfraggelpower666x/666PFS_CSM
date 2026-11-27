@@ -1,0 +1,106 @@
+{
+  "name": "666_CYBER_INTRO_HUD_TEMPLATE",
+  "version": "1.10.0",
+  "date": "2026-10-06",
+  "status": "FROZEN",
+  "source_version": "1.9",
+  "source_zip_sha256": "ddae52e62159941420bd8db24230be569ccb2e764aa36f877ec34bef00c5030d",
+  "source_zip_size_bytes": 793499,
+  "checks": {
+    "Phase1 READY": true,
+    "No redirect": true,
+    "Phase2 gate CSS": true,
+    "Phase2 arm JS": true,
+    "Base circuit animation disabled": true,
+    "Base label animation disabled": true,
+    "Base scanline animation disabled": true,
+    "Base reactor animation disabled": true,
+    "System Online 5.4s": true,
+    "2s final hold": true,
+    "System start event": true,
+    "Reset event": true,
+    "Center emblem static": true,
+    "No EMBED_FRAGMENT": true,
+    "No placeholder": true,
+    "All local image refs exist": true,
+    "JS syntax 666-cyber-intro-sequence.js": true,
+    "JS syntax 666-cyber-hud-logo.js": true
+  },
+  "files": [
+    {
+      "path": "FREEZE_MANIFEST.json",
+      "size": 685,
+      "sha256": "a4423d5e087070d4b9c5f25a49a975aa1c6e478c6a3a34766d3de7cf2a0f8d60"
+    },
+    {
+      "path": "README.md",
+      "size": 2479,
+      "sha256": "5b944d4ebfca2c8aa7d863b8b6fe7276ee480d678df9c704061034ddf3fd2219"
+    },
+    {
+      "path": "assets/css/666-cyber-intro-hud-sequence.css",
+      "size": 23484,
+      "sha256": "ad7aa7a9d283ab1b7856c228bca0fd4b64c069fda8773b94a7a4315eecccd874"
+    },
+    {
+      "path": "assets/images/center-emblem.png",
+      "size": 250472,
+      "sha256": "c513ed938513d82ff920c7269fcfac520025ef99bceda1b6c79da0e58d411dd5"
+    },
+    {
+      "path": "assets/images/intro-background.jpg",
+      "size": 341438,
+      "sha256": "9649daed928bc172fd7bc61ac654a21070e38229a4877c04af43e0d4794709ba"
+    },
+    {
+      "path": "assets/images/intro-brand.png",
+      "size": 186429,
+      "sha256": "465fe58acfb9b04e2a981f5b5656eb8812ccf0d0258aa50a9d3033dd511fc726"
+    },
+    {
+      "path": "assets/js/666-cyber-hud-logo.js",
+      "size": 4416,
+      "sha256": "777e06f5afef67f4274ebd67f41c20a8ccba6f97d397a2096d986c59c483c7ed"
+    },
+    {
+      "path": "assets/js/666-cyber-intro-sequence.js",
+      "size": 4113,
+      "sha256": "06e15a58c42fff6406678c063143840b74aa8c7332ba0a3b88a3a62598cab094"
+    },
+    {
+      "path": "docs/AUDIT_REPORT_v1_10.md",
+      "size": 1314,
+      "sha256": "75a2ee5858781a6533df059d48da18fe35444e58e955baaff9647305f68c4c5d"
+    },
+    {
+      "path": "docs/AUDIT_REPORT_v1_7.md",
+      "size": 1246,
+      "sha256": "f6cb8c70d9e3d8068029d6eb58e33cc84384cfaffe284b1dcb5d3c15c1f76777"
+    },
+    {
+      "path": "docs/CHANGELOG_v1_10.md",
+      "size": 528,
+      "sha256": "5c8ec44f5aef2cb89e2a66bcfc519f2511f212450ad01d32ec0a6a1fbb4f18c7"
+    },
+    {
+      "path": "docs/CHANGELOG_v1_7.md",
+      "size": 780,
+      "sha256": "91b1d8530665331d5f31db2db362d5151ab16293b6265684013844712abc3148"
+    },
+    {
+      "path": "docs/CHANGELOG_v1_8.md",
+      "size": 413,
+      "sha256": "be24245d3840669c9daadf44a3c8e77cb09cdfc718628f23cca6a8b4a83613b7"
+    },
+    {
+      "path": "docs/CHANGELOG_v1_9.md",
+      "size": 373,
+      "sha256": "5fe64391c24353f196f7b0f232def45aa2805f1a6652993aea4022e1633c4b24"
+    },
+    {
+      "path": "index.html",
+      "size": 4469,
+      "sha256": "21602e08889157633c19ec593e5893fef682ace3cdca9f0c0cc678ca3cd502a4"
+    }
+  ]
+}
