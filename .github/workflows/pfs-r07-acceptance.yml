@@ -1,0 +1,21 @@
+name: PFS R07 acceptance
+on:
+  push:
+    branches: [integration/pfs-r07-writer-20261127]
+  pull_request:
+    branches: [integration/pfs-r07-writer-20261127]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Writer regression
+        run: python3 -m unittest discover -s tools -p test_r07_writer.py -v
+      - name: Original Git object parity
+        run: python3 tools/r07_verify_integration.py HEAD
