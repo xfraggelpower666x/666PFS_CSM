@@ -1,0 +1,20 @@
+name: PFS R07 production candidate acceptance
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/r07_*'
+      - 'tools/test_r07_*'
+      - '.github/workflows/pfs-r07-production-acceptance.yml'
+permissions:
+  contents: read
+jobs:
+  publisher:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Production publisher regression
+        run: node --test tools/test_r07_production_publisher.mjs
