@@ -82,5 +82,15 @@
     "staging_pointer": "0ec3b18155e77943210b74155854f1ad63672beb",
     "child_source_promotion": false,
     "prior_return_anchor": "PFS_PLUGIN_0_1_11_BINARY_PARITY_AND_FRESH_HOST"
+  },
+  "r07_child_storage": {
+    "status": "MAIN_SOURCE_STORAGE_MERGED_RUNTIME_HOLDS_PRESERVED",
+    "source_merge": "1becaf2cf176831b1db23f5d107d0b1c2c40521f",
+    "staging_parity_ci": 45926769602,
+    "main_additive_files": 90,
+    "main_full_blob_reaudit": "PENDING",
+    "cures": "NATIVE_HOST_AND_EXTERNAL_TRUST_POLICY_OPEN",
+    "cyberintro": "ORIGINAL_V1_10_ZIP_AND_RUNTIME_OPEN",
+    "prior_return_anchor": "PFS_PLUGIN_0_1_11_BINARY_PARITY_AND_FRESH_HOST"
   }
 }
