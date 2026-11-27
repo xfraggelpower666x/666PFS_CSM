@@ -1,9 +1,9 @@
 name: PFS R07 acceptance
 on:
   push:
-    branches: [integration/pfs-r07-writer-20261127]
+    branches: [integration/pfs-r07-writer-20261127, integration/pfs-r07-host-bridge-20261127]
   pull_request:
-    branches: [integration/pfs-r07-writer-20261127]
+    branches: [integration/pfs-r07-writer-20261127, integration/pfs-r07-host-bridge-20261127]
 permissions:
   contents: read
 jobs:
@@ -21,3 +21,6 @@ jobs:
         run: python3 -m unittest discover -s tools -p test_r07_connector_adapter.py -v
       - name: Original Git object parity
         run: python3 tools/r07_verify_integration.py HEAD
+
+      - name: Native host bridge module acceptance
+        run: node --test tools/test_r07_native_host_bridge.mjs
