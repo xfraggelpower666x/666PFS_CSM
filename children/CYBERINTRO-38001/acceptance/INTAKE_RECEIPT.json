@@ -1,0 +1,313 @@
+{
+  "system": "CYBERINTRO-38001",
+  "version": "1.10.0",
+  "status": "LOCAL_SOURCE_VERIFIED_ARCHIVE_PARITY_PARTIAL",
+  "original_carrier": {
+    "name": "666_CYBER_INTRO_PYTHON_START_BACKUP_v1_0.zip",
+    "size": 798451,
+    "sha256": "37edccded4521734136c30205855079fe121666fcbbac4b24df77097b73f30c6",
+    "crc": "PASS",
+    "files": 20
+  },
+  "intro_files": 16,
+  "original_v1_9_sha256": "ddae52e62159941420bd8db24230be569ccb2e764aa36f877ec34bef00c5030d",
+  "freeze_checks": [
+    {
+      "path": "FREEZE_MANIFEST.json",
+      "expected": "a4423d5e087070d4b9c5f25a49a975aa1c6e478c6a3a34766d3de7cf2a0f8d60",
+      "actual": "d2aff9836aa74d77b79c722863c0fe4148dbc2be7bab17a924066920dbb0e3e3",
+      "expected_size": 685,
+      "actual_size": 3328,
+      "match": false
+    },
+    {
+      "path": "README.md",
+      "expected": "5b944d4ebfca2c8aa7d863b8b6fe7276ee480d678df9c704061034ddf3fd2219",
+      "actual": "5b944d4ebfca2c8aa7d863b8b6fe7276ee480d678df9c704061034ddf3fd2219",
+      "expected_size": 2479,
+      "actual_size": 2479,
+      "match": true
+    },
+    {
+      "path": "assets/css/666-cyber-intro-hud-sequence.css",
+      "expected": "ad7aa7a9d283ab1b7856c228bca0fd4b64c069fda8773b94a7a4315eecccd874",
+      "actual": "ad7aa7a9d283ab1b7856c228bca0fd4b64c069fda8773b94a7a4315eecccd874",
+      "expected_size": 23484,
+      "actual_size": 23484,
+      "match": true
+    },
+    {
+      "path": "assets/images/center-emblem.png",
+      "expected": "c513ed938513d82ff920c7269fcfac520025ef99bceda1b6c79da0e58d411dd5",
+      "actual": "c513ed938513d82ff920c7269fcfac520025ef99bceda1b6c79da0e58d411dd5",
+      "expected_size": 250472,
+      "actual_size": 250472,
+      "match": true
+    },
+    {
+      "path": "assets/images/intro-background.jpg",
+      "expected": "9649daed928bc172fd7bc61ac654a21070e38229a4877c04af43e0d4794709ba",
+      "actual": "9649daed928bc172fd7bc61ac654a21070e38229a4877c04af43e0d4794709ba",
+      "expected_size": 341438,
+      "actual_size": 341438,
+      "match": true
+    },
+    {
+      "path": "assets/images/intro-brand.png",
+      "expected": "465fe58acfb9b04e2a981f5b5656eb8812ccf0d0258aa50a9d3033dd511fc726",
+      "actual": "465fe58acfb9b04e2a981f5b5656eb8812ccf0d0258aa50a9d3033dd511fc726",
+      "expected_size": 186429,
+      "actual_size": 186429,
+      "match": true
+    },
+    {
+      "path": "assets/js/666-cyber-hud-logo.js",
+      "expected": "777e06f5afef67f4274ebd67f41c20a8ccba6f97d397a2096d986c59c483c7ed",
+      "actual": "777e06f5afef67f4274ebd67f41c20a8ccba6f97d397a2096d986c59c483c7ed",
+      "expected_size": 4416,
+      "actual_size": 4416,
+      "match": true
+    },
+    {
+      "path": "assets/js/666-cyber-intro-sequence.js",
+      "expected": "06e15a58c42fff6406678c063143840b74aa8c7332ba0a3b88a3a62598cab094",
+      "actual": "06e15a58c42fff6406678c063143840b74aa8c7332ba0a3b88a3a62598cab094",
+      "expected_size": 4113,
+      "actual_size": 4113,
+      "match": true
+    },
+    {
+      "path": "docs/AUDIT_REPORT_v1_10.md",
+      "expected": "75a2ee5858781a6533df059d48da18fe35444e58e955baaff9647305f68c4c5d",
+      "actual": "75a2ee5858781a6533df059d48da18fe35444e58e955baaff9647305f68c4c5d",
+      "expected_size": 1314,
+      "actual_size": 1314,
+      "match": true
+    },
+    {
+      "path": "docs/AUDIT_REPORT_v1_7.md",
+      "expected": "f6cb8c70d9e3d8068029d6eb58e33cc84384cfaffe284b1dcb5d3c15c1f76777",
+      "actual": "f6cb8c70d9e3d8068029d6eb58e33cc84384cfaffe284b1dcb5d3c15c1f76777",
+      "expected_size": 1246,
+      "actual_size": 1246,
+      "match": true
+    },
+    {
+      "path": "docs/CHANGELOG_v1_10.md",
+      "expected": "5c8ec44f5aef2cb89e2a66bcfc519f2511f212450ad01d32ec0a6a1fbb4f18c7",
+      "actual": "5c8ec44f5aef2cb89e2a66bcfc519f2511f212450ad01d32ec0a6a1fbb4f18c7",
+      "expected_size": 528,
+      "actual_size": 528,
+      "match": true
+    },
+    {
+      "path": "docs/CHANGELOG_v1_7.md",
+      "expected": "91b1d8530665331d5f31db2db362d5151ab16293b6265684013844712abc3148",
+      "actual": "91b1d8530665331d5f31db2db362d5151ab16293b6265684013844712abc3148",
+      "expected_size": 780,
+      "actual_size": 780,
+      "match": true
+    },
+    {
+      "path": "docs/CHANGELOG_v1_8.md",
+      "expected": "be24245d3840669c9daadf44a3c8e77cb09cdfc718628f23cca6a8b4a83613b7",
+      "actual": "be24245d3840669c9daadf44a3c8e77cb09cdfc718628f23cca6a8b4a83613b7",
+      "expected_size": 413,
+      "actual_size": 413,
+      "match": true
+    },
+    {
+      "path": "docs/CHANGELOG_v1_9.md",
+      "expected": "5fe64391c24353f196f7b0f232def45aa2805f1a6652993aea4022e1633c4b24",
+      "actual": "5fe64391c24353f196f7b0f232def45aa2805f1a6652993aea4022e1633c4b24",
+      "expected_size": 373,
+      "actual_size": 373,
+      "match": true
+    },
+    {
+      "path": "index.html",
+      "expected": "21602e08889157633c19ec593e5893fef682ace3cdca9f0c0cc678ca3cd502a4",
+      "actual": "21602e08889157633c19ec593e5893fef682ace3cdca9f0c0cc678ca3cd502a4",
+      "expected_size": 4469,
+      "actual_size": 4469,
+      "match": true
+    }
+  ],
+  "unlisted_intro_files": [
+    "docs/FREEZE_RECEIPT_v1_10.md"
+  ],
+  "assets": [
+    {
+      "path": "intro/assets/images/center-emblem.png",
+      "size": 250472,
+      "sha256": "c513ed938513d82ff920c7269fcfac520025ef99bceda1b6c79da0e58d411dd5",
+      "format": "PNG",
+      "dimensions": [
+        880,
+        1100
+      ],
+      "mode": "P"
+    },
+    {
+      "path": "intro/assets/images/intro-background.jpg",
+      "size": 341438,
+      "sha256": "9649daed928bc172fd7bc61ac654a21070e38229a4877c04af43e0d4794709ba",
+      "format": "JPEG",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "intro/assets/images/intro-brand.png",
+      "size": 186429,
+      "sha256": "465fe58acfb9b04e2a981f5b5656eb8812ccf0d0258aa50a9d3033dd511fc726",
+      "format": "PNG",
+      "dimensions": [
+        1400,
+        591
+      ],
+      "mode": "P"
+    }
+  ],
+  "references": [
+    {
+      "ref": "assets/images/intro-background.jpg",
+      "exists": true
+    },
+    {
+      "ref": "assets/images/intro-brand.png",
+      "exists": true
+    },
+    {
+      "ref": "assets/images/center-emblem.png",
+      "exists": true
+    },
+    {
+      "ref": "assets/css/666-cyber-intro-hud-sequence.css",
+      "exists": true
+    },
+    {
+      "ref": "assets/images/intro-brand.png",
+      "exists": true
+    },
+    {
+      "ref": "assets/images/center-emblem.png",
+      "exists": true
+    },
+    {
+      "ref": "assets/js/666-cyber-intro-sequence.js",
+      "exists": true
+    },
+    {
+      "ref": "assets/js/666-cyber-hud-logo.js",
+      "exists": true
+    },
+    {
+      "ref": "../images/intro-background.jpg",
+      "exists": true
+    }
+  ],
+  "js_syntax": [
+    {
+      "path": "666-cyber-hud-logo.js",
+      "exit": 0
+    },
+    {
+      "path": "666-cyber-intro-sequence.js",
+      "exit": 0
+    }
+  ],
+  "python_compile": "PASS",
+  "pyside6_available": false,
+  "remote": {
+    "repo": "xfraggelpower666x/WebRadio-666SOUNDsDESIGn",
+    "commit": "a59be61f7ccf81de61b228ed5853a1089c15ee2f",
+    "chunk_git_blobs": [
+      "4ad1141f6f55dd126100cc1fb60183b8c93ce143",
+      "9fd0faf9658a167105626c1796f66d7ef980cfd9",
+      "734c0e789d64f85b2adde9de4fb823b2ad4b2cb2",
+      "6501aa5e76c8bc75029014c7ccf56bada0005ba1"
+    ],
+    "decoded_size": 15803,
+    "comparison": "central directory CRC32 and size only; no remote decompression or SHA parity",
+    "entries": [
+      {
+        "path": "index.html",
+        "remote_crc": "994f1fbd",
+        "local_crc": "994f1fbd",
+        "remote_size": 4469,
+        "local_size": 4469,
+        "match": true
+      },
+      {
+        "path": "README.md",
+        "remote_crc": "8766e67f",
+        "local_crc": "8766e67f",
+        "remote_size": 2479,
+        "local_size": 2479,
+        "match": true
+      },
+      {
+        "path": "FREEZE_MANIFEST.json",
+        "remote_crc": "bbcef8d9",
+        "local_crc": "bbcef8d9",
+        "remote_size": 3328,
+        "local_size": 3328,
+        "match": true
+      },
+      {
+        "path": "assets/css/666-cyber-intro-hud-sequence.css",
+        "remote_crc": "d78fef16",
+        "local_crc": "d78fef16",
+        "remote_size": 23484,
+        "local_size": 23484,
+        "match": true
+      },
+      {
+        "path": "assets/js/666-cyber-intro-sequence.js",
+        "remote_crc": "6a2ea1ee",
+        "local_crc": "6a2ea1ee",
+        "remote_size": 4113,
+        "local_size": 4113,
+        "match": true
+      },
+      {
+        "path": "assets/js/666-cyber-hud-logo.js",
+        "remote_crc": "4d6a1bc0",
+        "local_crc": "4d6a1bc0",
+        "remote_size": 4416,
+        "local_size": 4416,
+        "match": true
+      },
+      {
+        "path": "docs/AUDIT_REPORT_v1_10.md",
+        "remote_crc": "8ada59ef",
+        "local_crc": "8ada59ef",
+        "remote_size": 1314,
+        "local_size": 1314,
+        "match": true
+      },
+      {
+        "path": "docs/CHANGELOG_v1_10.md",
+        "remote_crc": "21071a7c",
+        "local_crc": "21071a7c",
+        "remote_size": 528,
+        "local_size": 528,
+        "match": true
+      },
+      {
+        "path": "docs/FREEZE_RECEIPT_v1_10.md",
+        "remote_crc": "844c1cbc",
+        "local_crc": "844c1cbc",
+        "remote_size": 418,
+        "local_size": 418,
+        "match": true
+      }
+    ]
+  },
+  "original_v1_10_zip": "NOT_PRESENT",
+  "runtime": "NOT_TESTED",
+  "writes": "NONE"
+}
