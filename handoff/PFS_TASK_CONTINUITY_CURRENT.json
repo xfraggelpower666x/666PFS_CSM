@@ -70,5 +70,17 @@
     "reference_child": "MP3MANAGER-45001",
     "no_duplicate_zip": true,
     "no_change_to_existing_task_stack": true
+  },
+  "r07_production_publication": {
+    "scope": "ENGINEERING_TOOLING_ONLY",
+    "status": "BODY_PUBLISHED_VERIFIED",
+    "body_commit": "1eb110e947bf6576a641d217dfa49ebccae73a1b",
+    "ci_run": 45927263332,
+    "publisher_regression": "9_OF_9_PASS_SIMULATED_HOST",
+    "live_main_cas": "PASS_DIRECT_CONNECTOR",
+    "saved_module_live_binding": "NOT_EXECUTED",
+    "staging_pointer": "0ec3b18155e77943210b74155854f1ad63672beb",
+    "child_source_promotion": false,
+    "prior_return_anchor": "PFS_PLUGIN_0_1_11_BINARY_PARITY_AND_FRESH_HOST"
   }
 }
